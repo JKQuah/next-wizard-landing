@@ -1,26 +1,228 @@
 @import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+/*
+ * Single-theme site: there is no light/dark switching.
+ * `dark:` utilities that ship inside shadcn components are kept inert by
+ * pointing the variant at a class that is never applied.
+ */
+@custom-variant dark (&:is(.dark *));
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+/* ---------------------------------------------------------------------------
+ * Brand palette
+ * ------------------------------------------------------------------------- */
+@theme {
+  --color-primary-500: #2e2461;
+  --color-primary-400: #f68b29;
+  --color-primary-300: #cab0ff;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  --color-secondary-500: #f68b29;
+  --color-secondary-400: #ffad5f;
+  --color-secondary-300: #ffd500;
+
+  /* Illustration-only tones (skin and hair) */
+  --color-skin: #ffd3b6;
+  --color-skin-shade: #f2b48f;
+  --color-hair-brown: #8a5a3c;
+  --color-hair-auburn: #b86b3f;
+  --color-blush: #ff8fa3;
+
+  --shadow-clay:
+    0 16px 34px -14px rgb(46 36 97 / 0.38), 0 2px 0 rgb(255 255 255) inset,
+    0 -5px 0 rgb(46 36 97 / 0.06) inset;
+  --shadow-clay-hover:
+    0 24px 44px -16px rgb(46 36 97 / 0.46), 0 2px 0 rgb(255 255 255) inset,
+    0 -5px 0 rgb(46 36 97 / 0.06) inset;
+
+  --ease-out-soft: cubic-bezier(0.22, 1, 0.36, 1);
+
+  /* Aurora text (Magic UI): slow drifting gradient on the hero highlight. */
+  --animate-aurora: aurora 8s ease-in-out infinite alternate;
+
+  @keyframes aurora {
+    0% {
+      background-position: 0% 50%;
+      transform: rotate(-5deg) scale(0.9);
+    }
+    25% {
+      background-position: 50% 100%;
+      transform: rotate(5deg) scale(1.1);
+    }
+    50% {
+      background-position: 100% 50%;
+      transform: rotate(-3deg) scale(0.95);
+    }
+    75% {
+      background-position: 50% 0%;
+      transform: rotate(3deg) scale(1.05);
+    }
+    100% {
+      background-position: 0% 50%;
+      transform: rotate(-5deg) scale(0.9);
+    }
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* ---------------------------------------------------------------------------
+ * shadcn semantic tokens, mapped onto the brand palette
+ * ------------------------------------------------------------------------- */
+@theme inline {
+  --font-sans:
+    var(--font-nunito), var(--font-noto-sc), ui-sans-serif, system-ui, sans-serif;
+  --font-heading:
+    var(--font-nunito), var(--font-noto-sc), ui-sans-serif, system-ui, sans-serif;
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --radius-sm: calc(var(--radius) * 0.5);
+  --radius-md: calc(var(--radius) * 0.75);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.5);
+  --radius-2xl: calc(var(--radius) * 2);
+  --radius-3xl: calc(var(--radius) * 2.5);
+  --radius-4xl: calc(var(--radius) * 3);
+  --animate-blink-cursor: blink-cursor 1.2s step-end infinite;
+  @keyframes blink-cursor {
+  0%, 49% {
+    opacity: 1;
+    }
+  50%, 100% {
+    opacity: 0;
+    }
+  }
+}
+
+:root {
+  color-scheme: light;
+
+  --background: #ffffff;
+  --foreground: var(--color-primary-500);
+  --card: #ffffff;
+  --card-foreground: var(--color-primary-500);
+  --popover: #ffffff;
+  --popover-foreground: var(--color-primary-500);
+  --primary: var(--color-primary-500);
+  --primary-foreground: #ffffff;
+  /* Orange is too light for white text; pair it with the deep indigo. */
+  --secondary: var(--color-secondary-500);
+  --secondary-foreground: var(--color-primary-500);
+  --muted: color-mix(in oklab, var(--color-primary-300) 18%, white);
+  --muted-foreground: color-mix(in oklab, var(--color-primary-500) 78%, white);
+  --accent: color-mix(in oklab, var(--color-primary-300) 32%, white);
+  --accent-foreground: var(--color-primary-500);
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: color-mix(in oklab, var(--color-primary-300) 45%, white);
+  --input: color-mix(in oklab, var(--color-primary-300) 45%, white);
+  --ring: var(--color-primary-500);
+  --radius: 1rem;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  html {
+    @apply font-sans;
+    scroll-padding-top: 5.5rem;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-heading text-balance;
+  }
+}
+
+/* ---------------------------------------------------------------------------
+ * Reusable surfaces
+ * ------------------------------------------------------------------------- */
+
+/* Soft lilac -> peach wash used behind the hero and the languages section. */
+@utility bg-aurora {
+  background-color: #fff;
+  background-image:
+    radial-gradient(
+      60% 70% at 8% 12%,
+      color-mix(in oklab, var(--color-primary-300) 55%, transparent) 0%,
+      transparent 70%
+    ),
+    radial-gradient(
+      55% 65% at 95% 85%,
+      color-mix(in oklab, var(--color-secondary-400) 38%, transparent) 0%,
+      transparent 70%
+    ),
+    radial-gradient(
+      45% 55% at 70% 10%,
+      color-mix(in oklab, var(--color-primary-300) 30%, transparent) 0%,
+      transparent 70%
+    );
+}
+
+/* Clay card: chunky radius, double shadow, lifts on hover. */
+@utility clay-card {
+  border-radius: var(--radius-3xl);
+  background-color: #fff;
+  border: 1.5px solid color-mix(in oklab, var(--color-primary-300) 55%, white);
+  box-shadow: var(--shadow-clay);
+  transition:
+    transform 220ms var(--ease-out-soft),
+    box-shadow 220ms var(--ease-out-soft);
+
+  @media (hover: hover) {
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-clay-hover);
+    }
+  }
+}
+
+/* Idle hover for the flying mascot; the scroll route is handled in JS. */
+@keyframes mascot-bob {
+  0%,
+  100% {
+    transform: translateY(0) rotate(-2deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(2deg);
+  }
+}
+
+.mascot-bob {
+  animation: mascot-bob 3.2s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mascot-bob {
+    animation: none;
+  }
 }

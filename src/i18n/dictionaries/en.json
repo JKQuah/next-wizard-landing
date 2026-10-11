@@ -1,0 +1,1819 @@
+{
+  "meta": {
+    "title": "Singapore Math Wizard — Online Math Tutoring in Malaysia",
+    "description": "The largest online Singapore Math tutoring center in Malaysia. 30+ top teachers, personalized lessons and a gamified math app for primary school children."
+  },
+  "a11y": {
+    "skipToContent": "Skip to main content",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "mainNavigation": "Main navigation",
+    "changeLanguage": "Change language",
+    "rating": "Rated {rating} out of 5 stars",
+    "previousReviews": "Previous reviews",
+    "nextReviews": "Next reviews",
+    "external": "(opens in a new tab)"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "curriculum": "Curriculum",
+    "pricingMedia": "Packages",
+    "contact": "Contact"
+  },
+  "cta": {
+    "signUp": "Sign up now",
+    "whatsappMessage": "I'm interested in Singapore Math Wizard's packages"
+  },
+  "mascot": {
+    "text": "Contact us and arrange your free trial now!",
+    "whatsappMessage": "Hi! I'd like to arrange a free trial class for my child."
+  },
+  "hero": {
+    "titleStart": "Unlock the Power of",
+    "highlight": "Singapore Math",
+    "titleEnd": "",
+    "subtitle": "Welcome to Singapore Math Wizard, the largest online Singapore Math tutoring center in Malaysia. With 30+ top math teachers and personalized lessons, we specialize in improving your child's math skills using gamified edtech online apps. Witness significant growth in just 3 months!",
+    "imageAlt": "A smiling girl with a notebook and a boy with a book on his head, both having fun with math",
+    "chips": [
+      {
+        "word": "30+",
+        "translation": "top math teachers"
+      },
+      {
+        "word": "3 months",
+        "translation": "to significant growth"
+      },
+      {
+        "word": "Primary 1–6",
+        "translation": "online classes"
+      }
+    ]
+  },
+  "about": {
+    "title": "Why Singapore Math Wizard?",
+    "items": [
+      {
+        "title": "Flexible class time",
+        "text": "With our online learning platform, we offer the flexibility and convenience of learning mathematics from anywhere at any time."
+      },
+      {
+        "title": "Interactive learning resources",
+        "text": "We utilize a wide range of engaging resources, including visual aids, digital tools, and games, to enhance understanding and make math lessons come alive."
+      },
+      {
+        "title": "Parent engagement",
+        "text": "Parents are actively involved in their child's learning journey, providing regular updates, progress reports, and opportunities for parent-teacher communication."
+      },
+      {
+        "title": "Practicle portal",
+        "text": "Singapore Practicle Portal provides a gamified platform that transforms math lessons into interactive adventures, making learning enjoyable and engaging for students."
+      }
+    ]
+  },
+  "aboutPage": {
+    "meta": {
+      "title": "About us — Singapore Math Wizard",
+      "description": "Established in 2020, Singapore Math Wizard is a leading Singapore Math education provider in Malaysia, with a young, dynamic team led by experienced teachers."
+    },
+    "background": {
+      "title": "Company Background",
+      "paragraphs": [
+        "Singapore Math Wizard was founded in 2020 by Ms. Kym, an experienced tuition center teacher, and has grown into a leading provider of Singapore Math education.",
+        "Driven by a passion for children's learning, Ms. Kym set out to unlock every child's potential in math through personalized instruction and a dynamic learning environment. Our program follows the renowned Singapore Math curriculum, tailored to each student's learning style.",
+        "Our young, energetic teachers bring creativity to every lesson. Trusted by parents and students alike, we strive for excellence in math education, and we invite you to join us on this journey."
+      ]
+    },
+    "vision": {
+      "title": "Vision",
+      "text": "To ignite a math revolution, transforming the way students perceive and conquer mathematics with the power of Singapore Math."
+    },
+    "mission": {
+      "title": "Mission",
+      "text": "To unleash the math wizard within every student. Igniting a love for math, boosting confidence, and empowering students to become fearless problem solvers through captivating Singapore Math lessons and innovative teaching methods."
+    },
+    "values": {
+      "title": "Company Values",
+      "items": [
+        {
+          "title": "Excellence",
+          "text": "We strive for excellence in everything we do, from the quality of our teaching to the resources we provide."
+        },
+        {
+          "title": "Innovation",
+          "text": "We embrace innovation and continuously seek new ways to make math learning captivating and effective."
+        },
+        {
+          "title": "Personalization",
+          "text": "We understand that every student is unique, and we tailor our instruction to meet the individual needs and learning styles of each student."
+        },
+        {
+          "title": "Passion",
+          "text": "We are passionate about math education and dedicated to igniting a love for math in every student."
+        },
+        {
+          "title": "Growth mindset",
+          "text": "We promote a growth mindset in our students, encouraging them to embrace challenges, persist in the face of obstacles, and believe in their ability to learn and improve."
+        },
+        {
+          "title": "Collaboration",
+          "text": "We value collaboration between students, parents, and teachers. We actively engage parents in their child's learning journey, providing regular updates, feedback, and guidance."
+        },
+        {
+          "title": "Empowerment",
+          "text": "We empower students with the knowledge, skills, and confidence to become independent learners and critical thinkers."
+        },
+        {
+          "title": "Fun and engagement",
+          "text": "We incorporate interactive activities, games, and real-world examples to make math enjoyable and relevant."
+        }
+      ]
+    },
+    "team": {
+      "title": "The Team",
+      "members": [
+        {
+          "name": "Admellis Chow",
+          "role": "Co-founder",
+          "bio": "Meet Admellis, the passionate co-founder of Singapore Math Wizard. Born in 1999, Admellis brings a youthful energy and a deep understanding of the educational needs of children. With a Bachelor of Economics and Administration from Universiti Malaya, Admellis combines a strong academic background with a love for teaching."
+        },
+        {
+          "name": "Kym Wong",
+          "role": "Founder",
+          "bio": "Say Hello from Kym, the great mighty founder of Singapore Math Wizard. With over 10 years of experiences of mentoring and tutoring in day care centers and tuition centers, Kym has witnessed firsthand the incredible potential that lies within every child. It is this belief in the future stars that drives Kym's dedication to their growth."
+        },
+        {
+          "name": "Nelson Yau",
+          "role": "Co-founder",
+          "bio": "Introducing the esteemed co-founder, Nelson, the visionary force behind Singapore Math Wizard. His unwavering passion for teaching, coupled with a strong academic background in Electrical Engineering from University of Malaya, empowers him to shape young minds and foster an engaging classroom environment."
+        }
+      ]
+    },
+    "join": {
+      "title": "Do you want to join the team?",
+      "lead": "Calling all Math enthusiasts!",
+      "text": "Join our team and embark on a rewarding journey of shaping young minds through the power of mathematics.",
+      "cta": "We're hiring",
+      "whatsappMessage": "I'm interested in joining the Singapore Math Wizard team",
+      "imageAlt": "A smiling teacher in a headset waving hello, holding a tablet that shows a bar model"
+    }
+  },
+  "curriculumPage": {
+    "meta": {
+      "title": "Curriculum — Singapore Math Wizard",
+      "description": "A fun, progressive Singapore Math syllabus for Primary 1 to Primary 6, 100% aligned with MOE and certified by the Education Alliance of Finland."
+    },
+    "title": "Curriculum",
+    "hero": {
+      "text": "Our syllabus is **100%** aligned with MOE, and the Education Alliance of Finland (EAF) has also certified us for educational quality and effectiveness.",
+      "cta": "Explore our syllabus",
+      "chips": [
+        {
+          "word": "100%",
+          "label": "MOE aligned"
+        },
+        {
+          "word": "EAF",
+          "label": "Quality certified"
+        }
+      ],
+      "imageAlt": "A bar model with two bars of different lengths and a question mark for the missing amount"
+    },
+    "overview": {
+      "title": "Overview",
+      "lead": "To help your child form a positive attitude towards learning math, we make it a fun and progressive experience:",
+      "bullets": [
+        "Collect virtual pets as they practice and complete quests to upgrade their accessories.",
+        "Challenge friends to math duels, or team up to solve problems together.",
+        "Learn at their own pace!"
+      ]
+    },
+    "features": {
+      "title": "Features",
+      "items": [
+        {
+          "title": "Professional system",
+          "text": "A.I. + Practicle system to personalise questions to your child’s ability"
+        },
+        {
+          "title": "Gamification",
+          "text": "Gamification to make learning engaging and rewarding."
+        },
+        {
+          "title": "Monitoring",
+          "text": "Learning reports for you to track and optimise your child’s education journey."
+        }
+      ]
+    },
+    "syllabus": {
+      "ui": {
+        "aboutLevel": "About this level",
+        "readMore": "Read more",
+        "readLess": "Show less",
+        "topicNav": "Topics in this level",
+        "searchLabel": "Search skills",
+        "searchPlaceholder": "Search skills, e.g. fractions",
+        "clear": "Clear search",
+        "results": "{count} matching skills in {level}",
+        "noResults": "No skills match “{query}”. Try another word."
+      },
+      "title": "Math Syllabus",
+      "heading": "Syllabus overview of {level}",
+      "levels": [
+        {
+          "intro": [],
+          "topics": [
+            {
+              "title": "P1 Math: Numbers",
+              "description": [
+                "Math for Primary 1 kids begins with simple counting before they move on to learn how to add, subtract, multiply and divide.",
+                "The Primary 1 (P1) Math topics that are covered under the topic Numbers are: Numbers, Addition, Subtraction, Multiplication and Division. You can refer to the table below for the breakdown of the skills in each topic."
+              ],
+              "groups": [
+                {
+                  "title": "Numbers to 10",
+                  "skills": [
+                    "Counting to 10",
+                    "Comparing and ordering numbers"
+                  ]
+                },
+                {
+                  "title": "Addition",
+                  "skills": [
+                    "Number bonds"
+                  ]
+                },
+                {
+                  "title": "Subtraction",
+                  "skills": [
+                    "Number bonds",
+                    "Fact families"
+                  ]
+                },
+                {
+                  "title": "Shapes",
+                  "skills": [
+                    "Common shapes",
+                    "Getting to know shapes",
+                    "Grouping shapes",
+                    "Half circle and quarter circle",
+                    "Forming shapes"
+                  ]
+                },
+                {
+                  "title": "Ordinal numbers",
+                  "skills": [
+                    "Naming positions"
+                  ]
+                },
+                {
+                  "title": "Numbers to 20",
+                  "skills": [
+                    "Counting to 20",
+                    "Comparing and ordering numbers"
+                  ]
+                },
+                {
+                  "title": "Picture graphs",
+                  "skills": [
+                    "Making picture graphs",
+                    "Reading picture graphs"
+                  ]
+                },
+                {
+                  "title": "Addition and Subtraction",
+                  "skills": [
+                    "Methods of addition",
+                    "Methods of subtraction"
+                  ]
+                },
+                {
+                  "title": "Numbers to 100",
+                  "skills": [
+                    "Counting to 100",
+                    "Number patterns",
+                    "Comparing and ordering numbers"
+                  ]
+                },
+                {
+                  "title": "Addition and subtraction within 100",
+                  "skills": [
+                    "Addition without renaming",
+                    "Addition with renaming",
+                    "Addition of three numbers",
+                    "Subtracting without renaming",
+                    "Subtracting with renaming",
+                    "Word problems"
+                  ]
+                },
+                {
+                  "title": "Length",
+                  "skills": [
+                    "Measuring length in centimetres",
+                    "Comparing and ordering length",
+                    "Curves and straight lines"
+                  ]
+                },
+                {
+                  "title": "Multiplication",
+                  "skills": [
+                    "Introduction to multiplication",
+                    "Adding equal groups",
+                    "Multiplication word problems"
+                  ]
+                },
+                {
+                  "title": "Division",
+                  "skills": [
+                    "Equal sharing",
+                    "Equal grouping",
+                    "Word problems"
+                  ]
+                },
+                {
+                  "title": "Time",
+                  "skills": [
+                    "Telling time to 5 minutes",
+                    "Telling time using a.m. and p.m.",
+                    "Duration of one hour and half an hour"
+                  ]
+                },
+                {
+                  "title": "Money",
+                  "skills": [
+                    "Counting coins and notes",
+                    "Exchanging money",
+                    "Comparing money",
+                    "Adding money",
+                    "Subtracting money"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "intro": [],
+          "topics": [
+            {
+              "title": "P2 Math: Numbers",
+              "description": [
+                "Math for Primary 2 kids builds on what your child has learnt in Primary 1 and expands the range of numbers that they deal with.",
+                "The Primary 2 (P2) Math topics that are covered under Number are Numbers, Addition, Subtraction, Multiplication, Division and Fractions. You can refer below for the breakdown of the skills in each topic."
+              ],
+              "groups": [
+                {
+                  "title": "Whole Numbers",
+                  "skills": [
+                    "Count the number of objects in hundreds (Max:1000)",
+                    "Compare and order numbers (Max:1000)",
+                    "Understand place values up to 100"
+                  ]
+                },
+                {
+                  "title": "Addition",
+                  "skills": [
+                    "Add a 1-digit number to 3-digit number",
+                    "Add a 2-digit number to 3-digit number",
+                    "Add 2 3-digit numbers"
+                  ]
+                },
+                {
+                  "title": "Subtraction",
+                  "skills": [
+                    "Subtract a 1-digit number to 3-digit number",
+                    "Subtract a 2-digit number to 3-digit number",
+                    "Subtract 2 3-digit numbers"
+                  ]
+                },
+                {
+                  "title": "Multiplication",
+                  "skills": [
+                    "2 Multiplication table",
+                    "3 Multiplication table",
+                    "4 Multiplication table",
+                    "5 Multiplication table",
+                    "10 Multiplication table"
+                  ]
+                },
+                {
+                  "title": "Division",
+                  "skills": [
+                    "Write an equation with a division sign",
+                    "Divide by 2",
+                    "Divide by 3",
+                    "Divide by 4",
+                    "Divide by 5",
+                    "Divide by 10"
+                  ]
+                },
+                {
+                  "title": "Patterns",
+                  "skills": [
+                    "Identify odd & even number sequences",
+                    "Identify patterns with 2D shapes according to size, shape, colour & orientation",
+                    "Identify patterns with 3D shapes"
+                  ]
+                },
+                {
+                  "title": "Fractions",
+                  "skills": [
+                    "Write fractions",
+                    "Compare and order fractions (unit fractions)",
+                    "Compare and order fractions (like fractions)",
+                    "Add fractions within a whole (like fractions)",
+                    "Subtract fractions within a whole (like fractions)"
+                  ]
+                },
+                {
+                  "title": "Money",
+                  "skills": [
+                    "Read and write money in decimal notation",
+                    "Compare money",
+                    "Express money in decimal to cents only and vice versa"
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "P2 Math: Measurement and Geometry",
+              "description": [
+                "The Primary 2 (P2) Math topics that are covered under Measurement and Geometry are expansions on what the Primary 1s have learnt about Shapes, Length, Time and Money. New topics include Solids, Mass and Volume. See below for the breakdown of the skills in each topic."
+              ],
+              "groups": [
+                {
+                  "title": "Length",
+                  "skills": [
+                    "Estimate length of more than 1 m or less",
+                    "Choose when to use cm vs m",
+                    "Reading length with a ruler",
+                    "Compare and order lengths"
+                  ]
+                },
+                {
+                  "title": "Time",
+                  "skills": [
+                    "Tell time to 5 minutes",
+                    "Use ‘a.m.’ and ‘p.m.’",
+                    "Use h and min",
+                    "Identify hands on the clock face for a given time (mins)",
+                    "Identify hands on the clock face for a given time (hrs)",
+                    "Measure duration of 1 hour/half hour"
+                  ]
+                },
+                {
+                  "title": "2D Shapes",
+                  "skills": [
+                    "Identify a semi-circle",
+                    "Identify a quarter circle"
+                  ]
+                },
+                {
+                  "title": "Mass",
+                  "skills": [
+                    "Estimate mass of more than 1 kg or less",
+                    "Choose when to use g vs kg",
+                    "Reading mass with a scale",
+                    "Compare and order mass"
+                  ]
+                },
+                {
+                  "title": "Volume",
+                  "skills": [
+                    "Estimate volume of more than 1 ℓ or less",
+                    "Reading volume in ℓ",
+                    "Compare and order volume"
+                  ]
+                },
+                {
+                  "title": "3D Shapes",
+                  "skills": [
+                    "Identify a cube",
+                    "Identify a cuboid",
+                    "Identify a cylinder",
+                    "Identify a cone",
+                    "Identify a sphere"
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "P2 Math: Graphs",
+              "description": [
+                "The Primary 2 (P2) Math topics that are covered under Measurement and Geometry are expansions on what the Primary 1s have learnt about Shapes, Length, Time and Money. New topics include Solids, Mass and Volume. See below for the breakdown of the skills in each topic."
+              ],
+              "groups": [
+                {
+                  "title": "Data Analysis",
+                  "skills": [
+                    "Read and interpret picture graphs with scales"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "intro": [
+            "In P3, your child will expand their problem-solving toolbox by learning heuristics, such as drawing diagrams and looking for patterns.",
+            "If your child’s foundation is weak, they will struggle. Soon, they dread doing their homework or going to class.",
+            "They are afraid that they can’t keep up.",
+            "With Practicle, they can!",
+            "First, our platform will use AI to personalise our questions to match your child’s current ability.",
+            "Then, over time, as your child improves, we’ll give them tougher questions.",
+            "Even if the class has moved on, they can continue to build their skills.",
+            "That’s the beauty of self-paced learning.",
+            "Our syllabus is 100% aligned with MOE and is certified by the Education Alliance of Finland (EAF) for educational quality and effectiveness."
+          ],
+          "topics": [
+            {
+              "title": "P3 Math: Numbers",
+              "description": [
+                "The Primary 3 (P3) topics that are covered under Numbers are Whole Numbers, Addition, Subtraction, Multiplication, Division, Fractions and Money. Here’s the breakdown of the skills in each topic:"
+              ],
+              "groups": [
+                {
+                  "title": "Whole Numbers",
+                  "skills": [
+                    "Count in thousands",
+                    "Compare and order numbers",
+                    "Determine the place value of a number up to 1,000",
+                    "Complete number patterns",
+                    "Solve word problems with 4 operations"
+                  ]
+                },
+                {
+                  "title": "Addition",
+                  "skills": [
+                    "Add 4 digit numbers",
+                    "Solve addition word problems"
+                  ]
+                },
+                {
+                  "title": "Subtraction",
+                  "skills": [
+                    "Subtract 4 digit numbers",
+                    "Solve subtraction word problems"
+                  ]
+                },
+                {
+                  "title": "Multiplication",
+                  "skills": [
+                    "6 Multiplication table",
+                    "7 Multiplication table",
+                    "8 Multiplication table",
+                    "9 Multiplication table",
+                    "Multiply up to 3 digit by 1 digit",
+                    "Solve multiplication word problems"
+                  ]
+                },
+                {
+                  "title": "Division",
+                  "skills": [
+                    "Divide by 6",
+                    "Divide by 7",
+                    "Divide by 8",
+                    "Divide by 9",
+                    "Divide with remainders",
+                    "Divide up to 3 digits by 1 digit",
+                    "Solve division word problems"
+                  ]
+                },
+                {
+                  "title": "Fractions",
+                  "skills": [
+                    "Simplify a fraction",
+                    "Compare and order fractions",
+                    "Write equivalent fractions",
+                    "Add 2 related fractions",
+                    "Subtract 2 related fractions"
+                  ]
+                },
+                {
+                  "title": "Money",
+                  "skills": [
+                    "Add money in decimals",
+                    "Subtract money in decimals",
+                    "Solve money word problems"
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "P3 Math: Measurement and Geometry",
+              "description": [
+                "The Primary 3 (P3) topics that are covered under Measurement and Geometry are Length, Mass, Volume, Time, Angles, Perpendicular and Parallel Lines as well as Area and Perimeter. See below for the breakdown of skills in each topic:"
+              ],
+              "groups": [
+                {
+                  "title": "Length",
+                  "skills": [
+                    "Measure length in km",
+                    "Measure length in compound units",
+                    "Convert km and m to m and vice versa",
+                    "Convert m and cm to cm and vice versa",
+                    "Solve length word problems"
+                  ]
+                },
+                {
+                  "title": "Mass",
+                  "skills": [
+                    "Measuring length in centimetres",
+                    "Comparing and ordering length",
+                    "Curves and straight lines"
+                  ]
+                },
+                {
+                  "title": "Volume",
+                  "skills": [
+                    "Measure volume in ml",
+                    "Measure volume in compound units",
+                    "Convert l and ml to ml and vice versa",
+                    "Solve volume word problems"
+                  ]
+                },
+                {
+                  "title": "Time",
+                  "skills": [
+                    "Tell time to the minute",
+                    "Use “past” and “to” in time",
+                    "Calculate time in hours and minutes",
+                    "Convert time from hours and minutes to minutes and vice versa",
+                    "Solve time word problems"
+                  ]
+                },
+                {
+                  "title": "Lines",
+                  "skills": [
+                    "Identify perpendicular lines",
+                    "Identify parallel lines",
+                    "Identify horizontal and vertical lines"
+                  ]
+                },
+                {
+                  "title": "Angles",
+                  "skills": [
+                    "Identify right angles",
+                    "Identify acute angles",
+                    "Identify obtuse angles"
+                  ]
+                },
+                {
+                  "title": "Area & Perimeter",
+                  "skills": [
+                    "Find area and perimeter of a plane figure",
+                    "Find area in square units",
+                    "Find the perimeter of a rectilinear figure",
+                    "Find perimeter of square",
+                    "Find perimeter of rectangle",
+                    "Find the area of a square",
+                    "Find the area of a rectangle"
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "P3 Math: Graphs",
+              "description": [
+                "The Primary 3 (P3) topics that are covered under Graphs include data analysis of bar graphs. Refer below for the breakdown of the skills in this topic."
+              ],
+              "groups": [
+                {
+                  "title": "Data Analysis",
+                  "skills": [
+                    "Read bar graphs",
+                    "Solve word problems using graphs"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "intro": [
+            "In P4, your child will expand their problem-solving toolbox by learning heuristics, such as drawing diagrams and looking for patterns.",
+            "If your child’s foundation is weak, they will struggle. Soon, they dread doing their homework or going to class.",
+            "They are afraid that they can’t keep up.",
+            "With Practicle, they can!",
+            "First, our platform will use AI to personalise our questions to match your child’s current ability.",
+            "Then, over time, as your child improves, we’ll give them tougher questions.",
+            "Even if the class has moved on, they can continue to build their skills.",
+            "That’s the beauty of self-paced learning.",
+            "Our syllabus is 100% aligned with MOE and is certified by the Education Alliance of Finland (EAF) for educational quality and effectiveness."
+          ],
+          "topics": [
+            {
+              "title": "P4 Math: Numbers",
+              "description": [
+                "The Primary 4 (P4) topics that are covered under Numbers are Whole Numbers, Multiplication, Division, Factors and Multiples, Fractions and Decimals. The following shows the breakdown of the skills in topic:"
+              ],
+              "groups": [
+                {
+                  "title": "Whole Numbers",
+                  "skills": [
+                    "Compare and order numbers",
+                    "Understand place values up to 10,000",
+                    "Round numbers to the nearest 10,100 and 1,000",
+                    "Estimate the value of an equation"
+                  ]
+                },
+                {
+                  "title": "Multiplication",
+                  "skills": [
+                    "Multiply a 4-digit number by 1-digit",
+                    "Multiply up to 3-digits by 2 digits",
+                    "Multiply up to 3-digits by 10"
+                  ]
+                },
+                {
+                  "title": "Division",
+                  "skills": [
+                    "Divide a 4-digit number by 1-digit"
+                  ]
+                },
+                {
+                  "title": "Factors & Multiples",
+                  "skills": [
+                    "Check if a 1-digit number is a factor of a given number within 100",
+                    "Find common factors between 2 numbers",
+                    "Check if a number is a multiple of a given 1-digit number",
+                    "Find common multiples of 2 1-digit numbers"
+                  ]
+                },
+                {
+                  "title": "Fractions",
+                  "skills": [
+                    "Compare and order whole numbers and fractions",
+                    "Compare fractions with a common denominator",
+                    "Add fractions with different denominators",
+                    "Subtract fractions with different denominators",
+                    "Find a part of a set of objects",
+                    "Convert mixed numbers to improper fractions and vice versa"
+                  ]
+                },
+                {
+                  "title": "Decimals",
+                  "skills": [
+                    "Understand place values of tenths",
+                    "Understand place values of hundredths",
+                    "Understand place values of thousandths",
+                    "Convert a decimal to a fraction and vice versa",
+                    "Compare and order decimals",
+                    "Rounding decimals to the nearest whole number, 1 decimal place and 2 decimal places"
+                  ]
+                },
+                {
+                  "title": "Operation of Decimals",
+                  "skills": [
+                    "Add decimals up to 2 decimal places",
+                    "Subtract decimals up to 2 decimal places",
+                    "Multiply decimals up to 2 decimal places by 1-digit",
+                    "Divide decimals up to 2 decimal places by 1-digit",
+                    "Divide a whole number by a whole number"
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "P4 Math: Measurement and Geometry",
+              "description": [
+                "The Primary 4 (P4) topics that are covered under Measurement and Geometry are Time, Angles, Line symmetry, 2D Shapes, Area and Perimeter. See the following for the breakdown of skills in each topic:"
+              ],
+              "groups": [
+                {
+                  "title": "Time",
+                  "skills": [
+                    "Read the 24-hour clock",
+                    "Find the duration of an event",
+                    "Measure time in seconds",
+                    "Find starting time / ending time"
+                  ]
+                },
+                {
+                  "title": "Lines",
+                  "skills": [
+                    "Identify symmetric figures",
+                    "Check if a straight line is a line of symmetry",
+                    "Complete a symmetric figure with respect to a given line of symmetry"
+                  ]
+                },
+                {
+                  "title": "Angles",
+                  "skills": [
+                    "Name an angle",
+                    "Measure angles in degrees",
+                    "Relate quarter, half 3/4 and complete turns to angles in degrees",
+                    "Find angles between 2 directions on a 8-point compass"
+                  ]
+                },
+                {
+                  "title": "Area & Perimeter",
+                  "skills": [
+                    "Find the length of a side of a square",
+                    "Find the dimension of a rectangle",
+                    "Find the area of rectilinear figures"
+                  ]
+                },
+                {
+                  "title": "2D Shapes",
+                  "skills": [
+                    "Know the properties of a square",
+                    "Know the properties of a rectangle"
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "P4 Math: Graphs",
+              "description": [
+                "The Primary 4 (P4) topics that are covered under Statistics include Data Analysis. Refer below for the breakdown of the skills in this topic."
+              ],
+              "groups": [
+                {
+                  "title": "Data Analysis",
+                  "skills": [
+                    "Complete a table with given data",
+                    "Read and interpret line graphs"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "intro": [
+            "P5 is a difficult year for many students.",
+            "Having just made it through a trying year of transitioning into upper primary math in P4, they now face the onslaught of PSLE preparations.",
+            "Not to worry, because we have plenty of fun and effective learning material to help them build their skills and confidence, and put your mind at ease.",
+            "Find out what’s in the syllabus and try some of our sample questions!"
+          ],
+          "topics": [
+            {
+              "title": "P5 Math: Numbers",
+              "description": [
+                "The Primary 5 (P5) topics that are covered under Number are Whole Number, Fraction, Decimal, Percentage, Ratio and Rate. The following shows the breakdown of the skills in topic:"
+              ],
+              "groups": [
+                {
+                  "title": "Whole Numbers",
+                  "skills": [
+                    "Notate & Represent Place Values Up to 10,000",
+                    "Read and Write Numbers in Words Up to 1 Mil",
+                    "Apply Order of Operations",
+                    "Divide by 10, 100, 1000 & their Multiples",
+                    "Multiply with 10, 100, 1000 & their Multiples",
+                    "Solve Problem Sums Involving 4 Operations"
+                  ]
+                },
+                {
+                  "title": "Fractions",
+                  "skills": [
+                    "Add & Subtract Mixed Numbers",
+                    "Multiply Fraction by Whole Number",
+                    "Multiply Proper fraction & Proper Fractions",
+                    "Know How Fraction & Division Are Related",
+                    "Divide Whole Number by Whole Number",
+                    "Convert Fractions to Decimals and Vice Versa",
+                    "Multiply 2 Improper Fractions",
+                    "Solve Fraction Problem Sums"
+                  ]
+                },
+                {
+                  "title": "Rate",
+                  "skills": [
+                    "Express rate as the amount of quantity per unit of another quantity",
+                    "Find rate, total amount or number of units, given any other 2 quantities",
+                    "Solve problem sums with proportional reasoning"
+                  ]
+                },
+                {
+                  "title": "Ratio",
+                  "skills": [
+                    "Notate Ratios Involving Whole Numbers",
+                    "Write Equivalent Ratios",
+                    "Divide a Quantity in a Given Ratio",
+                    "Simplify a Ratio",
+                    "Solve P5 Problem Sums Involving Ratio",
+                    "Find Ratio of 2 or 3 Given Quantities"
+                  ]
+                },
+                {
+                  "title": "Percentage",
+                  "skills": [
+                    "Read & Interpret a Percentage of a Whole",
+                    "Convert a Fraction to Percentage",
+                    "Convert Percentage to Fraction",
+                    "Express Decimals as a Percentage and Vice Versa",
+                    "Convert Percentage to Decimal and Vice Versa",
+                    "Find Discount, GST and Annual Interest",
+                    "Find a percentage part of a whole",
+                    "Solve Problem Sums Involving Percentages"
+                  ]
+                },
+                {
+                  "title": "Decimals",
+                  "skills": [
+                    "Add and Subtract Decimals",
+                    "Round Off Decimals to the Nearest Whole Number, 1 Decimal or 2 Decimal Places",
+                    "Multiply Decimals up to 2-digit Whole Number",
+                    "Divide Decimals up to 2-digit Whole Number",
+                    "Multiply Decimals by 10, 100 1000 and their Multiples",
+                    "Divide Decimals by 10, 100 1000 and their Multiples",
+                    "Convert Measurements of Length, Mass & Volume",
+                    "Solve Problem Sums Involving 4 Operations"
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "P5 Math: Measurement and Geometry",
+              "description": [
+                "The Primary 5 (P5) topics that are covered under Measurement and Geometry are Area of Triangle, Volume and Angles. Refer to the following for the breakdown of the skills in each topic."
+              ],
+              "groups": [
+                {
+                  "title": "Area of Triangle",
+                  "skills": [
+                    "Read the 24-hour clock",
+                    "Find the duration of an event",
+                    "Measure time in seconds",
+                    "Find starting time / ending time"
+                  ]
+                },
+                {
+                  "title": "Volume",
+                  "skills": [
+                    "Draw the Top/Side/Front View of a Solid Made Up of Unit Cubes",
+                    "Find Volume of a Cuboid",
+                    "Find Volume of a Cube",
+                    "Find Volume of Liquid in a Rectangular Tank",
+                    "Convert 1 L to 1 000 cm^3",
+                    "Solve Problem Sums Involving Volume"
+                  ]
+                },
+                {
+                  "title": "Angles",
+                  "skills": [
+                    "Find Unknown Angles using the Property “Angles on a Straight Line“",
+                    "Find Unknown Angles using the Property “Angles at a Point“",
+                    "Find Unknown Angles using the Property “Vertically Opposite Angles“",
+                    "Know that Sum of Angles of a Triangle",
+                    "Find Unknown Angles in a Triangle",
+                    "Know the Properties of a Parallelogram",
+                    "Know the Properties of a Rhombus",
+                    "Know the Properties of a Trapezium",
+                    "Find Unknown Angles in a Special Quadrilateral",
+                    "Identify Basic Shapes in a Composite Figure"
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "P5 Math: Statistics",
+              "description": [
+                "The Primary 5 (P5) topics that are covered under Statistics include Average. Refer below for the breakdown of the skills in that topic."
+              ],
+              "groups": [
+                {
+                  "title": "Average",
+                  "skills": [
+                    "Find the Average, given Total Value & the Number of Data",
+                    "Find the Total Value, given the Average & the Number of Data",
+                    "Solve Problem Sums Involving Average"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "intro": [
+            "Many parents and children tend to stress out at this point.",
+            "Fear not — Practicle is here!",
+            "Our question bank comprises questions from top school exam papers to help you get the practice you need with the bonus of expanding your collection of virtual pets and rewards in our system! Revision doesn’t have to be boring all the time!",
+            "Start practicing now!"
+          ],
+          "topics": [
+            {
+              "title": "P6 PSLE Math: Numbers and Algebra",
+              "description": [
+                "The Primary 6 (P6) topics that are covered under Number and Algebra are Algebra, Whole Number, Fraction, Decimal, Percentage, Ratio and Speed, Rate and Time. Refer below for the breakdown of the skills in each topic."
+              ],
+              "groups": [
+                {
+                  "title": "Whole Numbers",
+                  "skills": [
+                    "Notate & Represent Place Values Up to 10 000",
+                    "Read and Write Numbers in Words Up to 1 Mil",
+                    "Apply Order of Operations",
+                    "Divide by 10, 100, 1000 & their Multiples",
+                    "Multiply with 10, 100, 1000 & their Multiples",
+                    "Solve Problem Sums Involving 4 Operations"
+                  ]
+                },
+                {
+                  "title": "Algebra",
+                  "skills": [
+                    "Notate & Interpret Simple Algebraic Expressions",
+                    "Solve Simple Equations",
+                    "Solve Simple Linear Equations",
+                    "Solve Simple Linear Expressions by Substitution",
+                    "Form & Solve Simple Linear Equations in Problem Sums"
+                  ]
+                },
+                {
+                  "title": "Fractions",
+                  "skills": [
+                    "Divide Whole Number by Proper Fraction",
+                    "Divide Proper Fraction by Proper Fraction",
+                    "Divide Proper Fraction by Whole Number",
+                    "Solve Fraction Problem Sums"
+                  ]
+                },
+                {
+                  "title": "Ratio",
+                  "skills": [
+                    "Understand the Relationship Between Fractions & Ratio",
+                    "Find Ratio of 2 Quantities in Direct Proportion",
+                    "Solve Problem Sums Involving 3 Quantities",
+                    "Solve Problem Sums that Involves Changing Ratio"
+                  ]
+                },
+                {
+                  "title": "Percentage",
+                  "skills": [
+                    "Find the Whole given a Part of the Percentage",
+                    "Find Percentage Increase/Decrease",
+                    "Solve Problem Sums Involving Percentages"
+                  ]
+                },
+                {
+                  "title": "Decimals",
+                  "skills": [
+                    "Add and Subtract Decimals",
+                    "Round Off Decimals to the Nearest Whole Number, 1 Decimal or 2 Decimal Places",
+                    "Multiply Decimals up to 2-digit Whole Number",
+                    "Divide Decimals up to 2-digit Whole Number",
+                    "Multiply Decimals by 10, 100 1000 and their Multiples",
+                    "Divide Decimals by 10, 100 1000 and their Multiples",
+                    "Convert Measurements of Length, Mass & Volume",
+                    "Solve Problem Sums Involving 4 Operations"
+                  ]
+                },
+                {
+                  "title": "Speed",
+                  "skills": [
+                    "Write Speed in Different Units",
+                    "Find Time, given Distance and Speed",
+                    "Find Speed, given Time and Distance",
+                    "Find Distance, given Time and Speed",
+                    "Solve Problem Sums Involving Speed",
+                    "Differentiate between Speed & Average Speed"
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "P6 PSLE Math: Measurement and Geometry",
+              "description": [
+                "The Primary 6 (P6) topics that are covered under Measurement and Geometry are Area and Perimeter, Volume, Angles, Shapes and Properties, 2D/3D Representation and Nets. Refer to the following for the breakdown of the skills in each topic."
+              ],
+              "groups": [
+                {
+                  "title": "Circles",
+                  "skills": [
+                    "Find Diameter of Circle, given Radius & Vice Versa",
+                    "Estimate Area of Circle Using a Square Grid",
+                    "Find Area/Circumference of Circle",
+                    "Find Area/Perimeter of Semi Circle",
+                    "Find Area/Perimeter of Quarter Circle",
+                    "Find Area of Composite Figures",
+                    "Find Perimeter of Composite Figures"
+                  ]
+                },
+                {
+                  "title": "Volume",
+                  "skills": [
+                    "Find 1 Dimension of Cuboid, given Volume & Other Dimensions",
+                    "Find Length of 1 Edge of Cube, given Volume",
+                    "Find Height of Cuboid, given Volume and Base Area",
+                    "Find Area of a Face of Cuboid, given Volume and 1 Dimension",
+                    "Solve Problem Sums Involving Volume of Liquid"
+                  ]
+                },
+                {
+                  "title": "Angles",
+                  "skills": [
+                    "Find Unknown Angles in Composite Figures"
+                  ]
+                },
+                {
+                  "title": "2D/3D Shapes",
+                  "skills": [
+                    "Associate 2-D Drawings with 3-D Solids",
+                    "Visualize Prisms, Cylinders, Pyramids & Cones from Drawings",
+                    "Draw 2-D Representations of Solids",
+                    "Convert measurements of length, mass & volume",
+                    "Identify the Solid that can be Formed by a Given Net",
+                    "Identify the Net that can be Used to Form a Given Solid"
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "P6 PSLE Math: Statistics",
+              "description": [
+                "The Primary 6 (P6) topics that are covered under Statistics include Average and Data Analysis. Refer below for the breakdown of the skills in each topic.",
+                "Although the students do not have the topic on Average in their P6 textbook, it will still be tested at the PSLE level."
+              ],
+              "groups": [
+                {
+                  "title": "Average",
+                  "skills": [
+                    "Find the Average, given Total Value & the Number of Data",
+                    "Find the Total Value, given the Average & the Number of Data",
+                    "Solve Problem Sums Involving Average"
+                  ]
+                },
+                {
+                  "title": "Data Analysis",
+                  "skills": [
+                    "Solve Problems Using Info from Pie Charts"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "join": {
+      "title": "Do you want to join the class?",
+      "text": "Seeking an extraordinary math learning experience? Look no further! Join our esteemed classes at Singapore Math Wizard and discover the secrets to mastering math."
+    }
+  },
+  "practicle": {
+    "title": "Practicle",
+    "visit": "Visit us at practicle.sg",
+    "paragraphs": [
+      "Discover Practicle, the AI-powered, adaptive online math practice system designed by experienced teachers with over a decade of expertise. Aligned with the MOE syllabus, our progressive and fun math app guarantees results for primary school students.",
+      "Experience the joy of learning as Practicle's gamified approach makes math practice delightful. Earn “Experience Points” and “Thinky Points” while closing learning gaps in a personalized and engaging way. Exchange your efforts for rewards, instilling the value of dedication and achievement in children.",
+      "Unlock your child's maximum potential with Practicle, the globally recognized online math app that brings back the joy of learning and transforms math practice into a delightful experience."
+    ],
+    "imageAlt": "A cheerful girl celebrating with both fists raised",
+    "badges": [
+      "AI-powered and adaptive",
+      "Aligned with the MOE syllabus",
+      "Experience Points",
+      "Thinky Points",
+      "Rewards for effort"
+    ]
+  },
+  "stats": {
+    "items": [
+      {
+        "value": "10,000+",
+        "label": "Teaching hours"
+      },
+      {
+        "value": "700+",
+        "label": "Students"
+      },
+      {
+        "value": "30+",
+        "label": "Teachers"
+      },
+      {
+        "value": "5Y",
+        "label": "Experience"
+      }
+    ]
+  },
+  "levels": {
+    "heading": "Primary levels we teach",
+    "items": [
+      "Primary 1",
+      "Primary 2",
+      "Primary 3",
+      "Primary 4",
+      "Primary 5",
+      "Primary 6"
+    ]
+  },
+  "teachers": {
+    "title": "Our Teachers",
+    "imageAlt": "A smiling teacher with glasses holding a book",
+    "items": [
+      {
+        "title": "Dynamic and energetic",
+        "text": "Young teachers who create an interactive and lively classroom environment with their innovative teaching methods."
+      },
+      {
+        "title": "Well-educated",
+        "text": "Hold at least a bachelor's degree and have undergone comprehensive training on Singapore Math."
+      },
+      {
+        "title": "Personalized attention",
+        "text": "Tailor teaching methods to suit the unique learning needs and styles of every student."
+      },
+      {
+        "title": "Effective communicators",
+        "text": "Convey complex mathematical concepts in a clear and understandable manner while listening to students' questions and concerns."
+      },
+      {
+        "title": "Regular feedback and assessment",
+        "text": "Provide timely and constructive feedback to parents while offering guidance on the student's strengths, areas for improvement, and specific steps to enhance their understanding."
+      },
+      {
+        "title": "Lifelong learning",
+        "text": "Professional development and continuous learning by engaging with ongoing training, attending workshops and collaborating with other teachers."
+      }
+    ]
+  },
+  "methods": {
+    "title": "Teaching Methods",
+    "intro": "Singapore Math Wizard incorporates several effective teaching methodologies to enhance students' learning experience.",
+    "diagramAlt": "A bar model: two bars of different lengths with a bracket showing the difference",
+    "items": [
+      {
+        "title": "Concrete-Pictorial-Abstract",
+        "text": "Ensure a solid foundation and deep comprehension of mathematical concepts before moving to abstract problem-solving."
+      },
+      {
+        "title": "Bar modeling",
+        "text": "Help students visualize and solve complex word problems by representing quantities and relationships using bars and diagrams."
+      },
+      {
+        "title": "Metacognition and heuristics",
+        "text": "Emphasize the development of metacognitive skills and problem-solving heuristics."
+      },
+      {
+        "title": "Problem-based learning",
+        "text": "Foster creativity, analytical thinking, and the ability to apply mathematical knowledge in practical scenarios."
+      }
+    ]
+  },
+  "invite": {
+    "title": "Ignite your child's love for math with Singapore Math Wizard.",
+    "text": "Don't miss out on this opportunity to transform their math skills and unlock a world of possibilities. Book an introduction session today and discover the magic of math with us!"
+  },
+  "reviews": {
+    "title": "Parental Review",
+    "subtitle": "Real feedback from parents, collected through WhatsApp.",
+    "rating": "5.0/5.0",
+    "items": [
+      {
+        "name": "Joy Qing's Mummy",
+        "grade": "Primary 2",
+        "comments": [
+          "Happy to see her asking more questions. Despite Morquio syndrome, she managed to learn and write partly.",
+          "Thank you for your patience, she likes your class a lot."
+        ]
+      },
+      {
+        "name": "Joel Law's Parent",
+        "grade": "Primary 3",
+        "comments": [
+          "I am thrilled with Joel's progress in math since joining Singapore Math Wizard.",
+          "Coming from a local SJKC syllabus, we worried about his English. Instead, he has built a stronger math foundation and improved his English too.",
+          "He has made impressive progress this year and, most importantly, enjoys every session."
+        ]
+      }
+    ]
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "questionCount": "{count} questions",
+    "links": {
+      "email": "email",
+      "call": "call",
+      "pricing": "link",
+      "trial": "free trial here"
+    },
+    "groups": [
+      {
+        "id": "pre",
+        "title": "Pre-registration",
+        "description": "Levels, syllabus, tutors and fees",
+        "items": [
+          {
+            "q": "Which primary levels do you offer for online classes?",
+            "a": [
+              "We offer online classes for primary levels ranging from Primary 1 to Primary 6."
+            ]
+          },
+          {
+            "q": "What kind of math syllabus do you offer?",
+            "a": [
+              "We offer Singapore Math syllabus that is aligned with Singapore MOE's curriculum, which is widely recognized for its effectiveness in developing strong mathematical foundations and problem-solving skills."
+            ]
+          },
+          {
+            "q": "Which platform do you use to conduct online classes?",
+            "a": [
+              "We conduct our online classes by using the popular and reliable video conferencing platform - ZOOM."
+            ]
+          },
+          {
+            "q": "What are the qualifications of your online tutors?",
+            "a": [
+              "Our online tutors hold at least a bachelor's degree and have undergone comprehensive training on Singapore Math to provide creative teaching methods with various online tools."
+            ]
+          },
+          {
+            "q": "Which language is used during the online classes?",
+            "a": [
+              "Classes are conducted primarily in English, but we will provide Chinese translation to SJKC students specifically."
+            ]
+          },
+          {
+            "q": "My child is studying in SJK(C) or SK under the Malaysian government syllabus (KSSR). Will it conflict with the existing curriculum in school?",
+            "a": [
+              "No. Singapore Math syllabus is designed to complement and enhance the existing curriculum in schools. We focus on building strong mathematical foundations and problem-solving skills."
+            ]
+          },
+          {
+            "q": "Singapore Math vs Olympiad Math - How are they different?",
+            "a": [
+              "Singapore Math is a comprehensive curriculum that focuses on building a solid foundation in essential mathematical concepts and problem-solving skills. It aims to provide a well-rounded mathematical education for students.",
+              "Olympiad Math is a specialized program that prepares students for mathematical Olympiad competitions. It focuses on creative thinking and exploring multiple approaches to solving complex IQ problems."
+            ]
+          },
+          {
+            "q": "Singapore Math vs Kumon - How are they different?",
+            "a": [
+              "Singapore Math covers a wide range of mathematical topics while emphasizing conceptual understanding, problem-solving skills, and the use of visual models.",
+              "Kumon uses repetitive practice worksheets to reinforce math skills while developing speed and accuracy."
+            ]
+          },
+          {
+            "q": "Can I schedule a free introduction session before joining the online classes?",
+            "a": [
+              "Absolutely! Feel free to reach out to us through {email} or {call}."
+            ]
+          },
+          {
+            "q": "What is the tuition fee structure for online classes?",
+            "a": [
+              "You may view it through this {pricing}."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "post",
+        "title": "Post-registration",
+        "description": "Scheduling, homework and progress tracking",
+        "items": [
+          {
+            "q": "Can I request to change the day and time for weekly classes?",
+            "a": [
+              "Yes! You may discuss with your assigned teacher or contact us through {email} or {call} for further arrangements."
+            ]
+          },
+          {
+            "q": "What if I can't attend the online classes?",
+            "a": [
+              "For our 1-to-1 learning class, you may discuss and reschedule with your assigned teacher.",
+              "For our peer learning class, kindly give us at least 2-3 days advance notice for further rearrangements with other parents. In the event that you are unable to give us advance notice, don't worry! We will provide you with a recording of the missed session so you can catch up on the material at your convenience."
+            ]
+          },
+          {
+            "q": "How to ensure the effectiveness of online classes?",
+            "a": [
+              "Tutors and students are required to keep their cameras turned on throughout the session. This helps us to create an interactive and engaging learning environment, as our experienced tutors can actively observe and provide personalized guidance based on students' responses and participation."
+            ]
+          },
+          {
+            "q": "Is there any homework assigned after each online class?",
+            "a": [
+              "Yes! In order to reinforce the concepts covered during the class, we will assign homework after each session through Practicle app."
+            ]
+          },
+          {
+            "q": "How can parents track their child's progress during the class?",
+            "a": [
+              "Our teachers will actively communicate with parents to provide regular updates on their child's performance. We believe in maintaining a strong parent-teacher partnership to ensure the best educational outcomes for our students."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "practicle",
+        "title": "About Practicle",
+        "description": "Devices, question types and mistake review",
+        "items": [
+          {
+            "q": "What is Practicle?",
+            "a": [
+              "Practicle is a fun gamified online math learning app associated with our online classes. The app has been endorsed by Education Alliance of Finland for educational quality and effectiveness."
+            ]
+          },
+          {
+            "q": "What device does Practicle work on?",
+            "a": [
+              "Practicle is a browser-based app that works well with Google Chrome and Firefox, except Safari.",
+              "It is compatible with desktops, laptops, tablets, and mobile phones, as long as there is Internet connection."
+            ]
+          },
+          {
+            "q": "What kind of Math questions can I expect my child to be doing on Practicle?",
+            "a": [
+              "Your child will get a nice balance of multiple-choice questions, short-answer questions, and word problems.",
+              "Practicle has questions for all levels and abilities where the system will choose the perfect difficulty for your child to progressively improve their math skills over time!"
+            ]
+          },
+          {
+            "q": "Are the Math questions updated?",
+            "a": [
+              "Yes! Practicle will update its question bank every school term, so your child will get a variety of questions that follow exam trends."
+            ]
+          },
+          {
+            "q": "Are there answers for every question?",
+            "a": [
+              "Yes! Every question in Practicle will come with 2 kinds of answers:",
+              "1. Step-by-step written explanations",
+              "2. Video explanations"
+            ]
+          },
+          {
+            "q": "Can I review past mistakes?",
+            "a": [
+              "Yes. Every question you've done is stored in your Practicle account and you can review them anytime along with their worked solutions and video explanations."
+            ]
+          }
+        ]
+      },
+      {
+        "id": "payment",
+        "title": "Payment",
+        "description": "Payments, cancellation and free trial",
+        "items": [
+          {
+            "q": "How do I make a payment?",
+            "a": [
+              "**Free Trial**",
+              "You don't have to enter any payment information yet. You can log in later on to upgrade your plan.",
+              "**Paid Plans**",
+              "Simply enter your payment information during registration like you would with most online purchases. We accept internet bank transfer, credit cards and debit cards."
+            ]
+          },
+          {
+            "q": "Are there any deposit/registration fees?",
+            "a": [
+              "No. Choose a plan and sign up now!"
+            ]
+          },
+          {
+            "q": "Can I change/cancel my subscription anytime?",
+            "a": [
+              "Yes. You can change/cancel your subscription anytime within our system or contact us through {email} or {call}."
+            ]
+          },
+          {
+            "q": "Do I have a free trial?",
+            "a": [
+              "Yes. You can sign up for a {trial}. No payment information required. Try it out with your child and see if you like it!"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "pricingMediaPage": {
+    "meta": {
+      "title": "Packages — Singapore Math Wizard",
+      "description": "Free trial, 1-to-1 and peer learning Singapore Math packages from RM 180 a month, plus a gallery of lessons, materials and parent and teacher reviews."
+    },
+    "pricing": {
+      "title": "Discover Our Packages",
+      "subtitle": "Start your trial now, choose a plan later.",
+      "currency": "RM",
+      "popular": "Popular",
+      "billing": {
+        "label": "Billing period",
+        "monthly": "Monthly",
+        "yearly": "Yearly",
+        "monthlyPeriod": "/mo",
+        "yearlyPeriod": "/yr",
+        "yearlyTag": "-20%",
+        "save": "Save RM {amount} a year"
+      },
+      "plans": [
+        {
+          "id": "free",
+          "name": "Free",
+          "recurring": false,
+          "price": {
+            "monthly": "0.00",
+            "yearly": "0.00"
+          },
+          "popular": false,
+          "features": [
+            "60 minutes private consultation",
+            "Assess your child's level",
+            "Personalized teacher matching",
+            "Free 30 SG math questions in Practicle Portal"
+          ],
+          "extras": [],
+          "cta": "Book your trial today",
+          "upgrades": [
+            {
+              "feature": 0,
+              "was": "30 minutes",
+              "now": "60 minutes"
+            }
+          ]
+        },
+        {
+          "id": "one-to-one",
+          "name": "1-to-1",
+          "recurring": true,
+          "price": {
+            "monthly": "260",
+            "yearly": "2640"
+          },
+          "popular": true,
+          "features": [
+            "Complete SG math syllabus",
+            "Bilingual teaching",
+            "4 lessons per month",
+            "Unique learning experience",
+            "Unlimited questions in Portal"
+          ],
+          "extras": [
+            "1-to-1 teaching",
+            "Constant interaction with teacher",
+            "Flexible replacement classes",
+            "Personal speed of progress",
+            "Tailored learning and communication style"
+          ],
+          "cta": "Sign Up Now",
+          "upgrades": []
+        },
+        {
+          "id": "peer",
+          "name": "Peer Learning",
+          "recurring": true,
+          "price": {
+            "monthly": "180",
+            "yearly": null
+          },
+          "popular": false,
+          "features": [
+            "Complete SG math syllabus",
+            "Bilingual teaching",
+            "4 lessons per month",
+            "Unique learning experience",
+            "Unlimited questions in Portal"
+          ],
+          "extras": [
+            "Maximum 4 peers in a class",
+            "High quality of peer interaction"
+          ],
+          "cta": "Sign Up Now",
+          "upgrades": []
+        }
+      ],
+      "upgradedLabel": "Upgraded"
+    },
+    "gallery": {
+      "title": "Gallery Wall",
+      "subtitle": "Journey into the World of Singapore Math",
+      "filterLabel": "Filter the gallery",
+      "all": "All",
+      "allTagline": "Journey into the World of Singapore Math",
+      "categories": [
+        {
+          "id": "classes",
+          "label": "Class moments",
+          "tagline": "Journey into the World of Singapore Math",
+          "items": [
+            {
+              "id": "photo-01",
+              "alt": "A teacher smiling at her laptop beside a fractions lesson on screen, with the words Customize teaching plan and Interactive learning works."
+            },
+            {
+              "id": "photo-02",
+              "alt": "Poster saying Don't let math freak you out anymore, PM for a free trial class assessment for Primary 1 to Primary 6, above photos of children learning online."
+            },
+            {
+              "id": "photo-03",
+              "alt": "1-to-1 coaching: a pizza fractions question on screen while a teacher and a student join the class by video."
+            },
+            {
+              "id": "photo-04",
+              "alt": "A peer class of two to four students holding up their handwritten work on a video call."
+            },
+            {
+              "id": "photo-05",
+              "alt": "Chinese poster offering a free online trial class for children aged 6 to 12, with two students showing their notebooks on video."
+            }
+          ]
+        },
+        {
+          "id": "benefits",
+          "label": "Benefits",
+          "tagline": "Journey into the World of Singapore Math",
+          "items": [
+            {
+              "id": "benefit-01",
+              "alt": "Title card reading Benefits of Singapore Math, over a classroom of children raising their hands."
+            },
+            {
+              "id": "benefit-02",
+              "alt": "Benefit 1, Build strong foundation: a parent and a child counting on their fingers while learning concepts thoroughly."
+            },
+            {
+              "id": "benefit-03",
+              "alt": "Benefit 2, Mastery of concepts: the Singaporean curriculum covers fewer topics in greater depth, shown with a child learning on a laptop."
+            },
+            {
+              "id": "benefit-04",
+              "alt": "Benefit 3, Visual learning: the concrete, pictorial and abstract approach, with a child showing a bar model in her notebook."
+            },
+            {
+              "id": "benefit-05",
+              "alt": "Poster saying PM now to get a free trial session, with a smiling girl holding a laptop."
+            }
+          ]
+        },
+        {
+          "id": "materials",
+          "label": "Materials",
+          "tagline": "Embrace the Magic of Mathematics",
+          "items": [
+            {
+              "id": "method-01",
+              "alt": "Bar modelling worked example in Chinese: three boxes of pearls drawn as bars, solved as 4760 + 550 − 29 = 5281."
+            },
+            {
+              "id": "method-02",
+              "alt": "Bar modelling method in Chinese: turning a word problem into a visual bar diagram you can draw in two minutes."
+            },
+            {
+              "id": "method-03",
+              "alt": "Chinese poster announcing online AI learning materials: targeted learning, gamified practice and an MOE-aligned syllabus, powered by Practicle."
+            },
+            {
+              "id": "method-04",
+              "alt": "Chinese poster for online Singapore Math with four years of market experience and over 30 online teachers, showing a teacher and a student in a lesson."
+            },
+            {
+              "id": "method-05",
+              "alt": "Bar modelling worked example in Chinese: the difference between the first day and the next two days, solved as 6016 − 5275 = 741."
+            }
+          ]
+        },
+        {
+          "id": "reviews",
+          "label": "Reviews",
+          "tagline": "Connecting Relationship through the Power of Math",
+          "items": [
+            {
+              "id": "review-01",
+              "alt": "Teacher Thor on a student: Enn Yu is a very cheerful girl in class who completes her homework on time, and I feel very proud of her."
+            },
+            {
+              "id": "review-02",
+              "alt": "Teacher Bowie on a student: Joel is an innovative and creative student who enjoys solving math questions in his own unique way."
+            },
+            {
+              "id": "review-03",
+              "alt": "Notes from a parent of Joel Law, Primary 3, Penang, thrilled with his progress in both mathematics and English."
+            },
+            {
+              "id": "review-04",
+              "alt": "Teacher Admellis to a star student: I'm so proud of you and how far you've come."
+            }
+          ]
+        }
+      ],
+      "lightbox": {
+        "title": "Gallery",
+        "close": "Close",
+        "previous": "Previous image",
+        "next": "Next image",
+        "counter": "{current} of {total}"
+      }
+    },
+    "video": {
+      "title": "Learn Fraction",
+      "subtitle": "With Singapore Math Wizard Today",
+      "iframeTitle": "Singapore Math Wizard fractions class, video on Facebook",
+      "paragraphs": [
+        "Introducing the **Singapore Math Wizard**, an online class that makes learning fractions a breeze.",
+        "**Emma** struggled with fractions, but after joining Singapore Math Wizard's online class, she aced her math test with a score of 80%! 😲",
+        "Now, she's the talk of her school and even tutors her friends on how to visualize fractions!"
+      ]
+    },
+    "quote": {
+      "text": "Mathematics is not about numbers, equations, or algorithms. It is about understanding.",
+      "author": "William Paul Thurston"
+    }
+  },
+  "contactPage": {
+    "meta": {
+      "title": "Contact — Singapore Math Wizard",
+      "description": "Get in touch with Singapore Math Wizard by WhatsApp, email, Facebook or our contact form, and book a free trial class for your child."
+    },
+    "title": "Say Hello to Us",
+    "subtitle": "Mathematics for a Brighter Future: Your Voice Matters, Let's Talk!",
+    "info": {
+      "address": {
+        "label": "Office address",
+        "value": "1, Jalan Kaki Bukit, 11700 Gelugor, Penang, Malaysia"
+      },
+      "hours": {
+        "label": "Business hours",
+        "value": "Always open"
+      },
+      "phone": {
+        "label": "Phone / WhatsApp"
+      },
+      "email": {
+        "label": "Email"
+      },
+      "facebook": {
+        "label": "Facebook",
+        "value": "Singapore Math Wizard"
+      }
+    },
+    "map": {
+      "title": "Map showing our office in Gelugor, Penang"
+    },
+    "form": {
+      "placeholders": {
+        "name": "e.g. Sarah Tan",
+        "email": "name@example.com",
+        "phoneHint": "e.g. {number}",
+        "message": "e.g. My child is in Primary 3 and finds fractions difficult. Can you help?"
+      },
+      "title": "Send us a message",
+      "intro": "Tell us about your child and how we can help. We'll get back to you soon, within 1–3 business days.",
+      "name": "Your name",
+      "email": "Email address",
+      "phone": "Phone number",
+      "country": "Country",
+      "countryRequired": "Please select your country.",
+      "countryPlaceholder": "Select your country",
+      "countries": [
+        {
+          "code": "SG",
+          "name": "Singapore"
+        },
+        {
+          "code": "MY",
+          "name": "Malaysia"
+        },
+        {
+          "code": "CN",
+          "name": "China"
+        },
+        {
+          "code": "HK",
+          "name": "Hong Kong"
+        },
+        {
+          "code": "AU",
+          "name": "Australia"
+        },
+        {
+          "code": "AE",
+          "name": "Dubai (UAE)"
+        },
+        {
+          "code": "US",
+          "name": "United States"
+        },
+        {
+          "code": "GB",
+          "name": "United Kingdom"
+        },
+        {
+          "code": "OTHER",
+          "name": "Others"
+        }
+      ],
+      "message": "Tell us more about your kid",
+      "submit": "Send message",
+      "sending": "Sending…",
+      "success": "Thank you! Your message has been sent and we'll be in touch soon.",
+      "error": "Sorry, we couldn't send your message just now. Please reach us on WhatsApp or by email instead."
+    }
+  },
+  "footer": {
+    "tagline": "The largest online Singapore Math tutoring center in Malaysia that helps primary school children master Math through understanding and fun.",
+    "links": {
+      "title": "Explore"
+    },
+    "contact": {
+      "title": "Contact",
+      "facebook": "Facebook",
+      "whatsapp": "WhatsApp",
+      "email": "Email"
+    },
+    "copyright": "Copyright © 2020-2026 Singapore Math Wizard. All Rights Reserved."
+  }
+}

@@ -1,36 +1,40 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Singapore Math Wizard — landing page
 
-## Getting Started
+Next.js 16 (App Router, Cache Components) · Tailwind CSS 4 · shadcn/ui (Base UI) · motion
 
-First, run the development server:
+Home-page content mirrors https://www.sgmathwizard.com/ in English and Simplified Chinese.
+
+## Run
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+pnpm install
+pnpm dev      # http://localhost:3000 -> redirects to /en or /zh
+pnpm build && pnpm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Structure
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+| Path | Purpose |
+| --- | --- |
+| `src/app/[lang]/` | Root layout + page; every route lives under the locale segment |
+| `src/app/[lang]/about/` | About page (`/en/about`, `/zh/about`): background, vision, values, team, hiring |
+| `src/app/[lang]/curriculum/` | Curriculum page: overview, features, Primary 1–6 syllabus tabs (`curriculumPage` in the dictionaries) |
+| `src/proxy.ts` | Redirects `/` to the best locale using `Accept-Language` |
+| `src/i18n/dictionaries/*.json` | All copy. `en.json` defines the shape; other locales must match it (type-checked) |
+| `src/i18n/config.ts` | Supported locales, labels, BCP 47 tags |
+| `src/lib/site.ts` | Site URL, WhatsApp / email / Facebook endpoints, off-page links |
+| `src/components/motion/reveal.tsx` | `<Reveal>` scroll fade-in; respects `prefers-reduced-motion` |
+| `src/components/sections/about-us/` | About-page sections; add team portraits via `photo` in `team.tsx` |
+| `src/components/sections/` | Hero, About, Practicle, Stats, Levels, Teachers, Methods, Invite, Reviews, FAQ |
+| `src/components/illustrations/` | Inline SVG kids, teacher and bar-model art |
+| `src/app/globals.css` | Brand tokens (`primary-500/400/300`, `secondary-500/400/300`) |
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Add a language
 
-## Learn More
+1. Add the code to `locales`, `localeLabels` and `localeTags` in `src/i18n/config.ts`.
+2. Copy `en.json` to `src/i18n/dictionaries/<code>.json` and translate.
+3. Register it in `src/i18n/get-dictionary.ts`.
 
-To learn more about Next.js, take a look at the following resources:
+## Theme
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Single light theme by design — there is no dark mode or theme switch.
