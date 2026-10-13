@@ -11,7 +11,7 @@ import { Doodle } from "@/components/illustrations/doodle";
 import { Reveal } from "@/components/motion/reveal";
 import { ContactForm } from "@/components/sections/contact/contact-form";
 import type { Dictionary } from "@/i18n/get-dictionary";
-import { contact, contactFormAction, mapEmbedUrl, mapsUrl, whatsappUrl } from "@/lib/site";
+import { contact, mapEmbedUrl, mapsUrl, whatsappUrl } from "@/lib/site";
 import { cn } from "@/lib/utils";
 
 type InfoItem = {
@@ -129,10 +129,9 @@ export function ContactSection({ dict }: { dict: Dictionary }) {
             <p className="mt-2 mb-6 text-base leading-relaxed text-muted-foreground">{form.intro}</p>
             <ContactForm
               content={form}
-              action={contactFormAction}
               fallback={[
                 { href: whatsapp, label: info.phone.label },
-                { href: `mailto:${contact.email}`, label: contact.email },
+                { href: `mailto:${contact.email}`, label: form.emailUs },
               ]}
             />
           </Reveal>

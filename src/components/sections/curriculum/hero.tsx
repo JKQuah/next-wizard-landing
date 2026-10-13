@@ -18,6 +18,9 @@ const chipPositions = [
   "bottom-[-7%] left-0 sm:left-[-4%]",
 ];
 
+/** Same hover as the home hero chips; the tilt alternates between them. */
+const chipHoverTilt = ["motion-safe:hover:-rotate-3", "motion-safe:hover:rotate-3"];
+
 /** Decorative operators floating around the bar model. */
 const symbols = [
   { char: "+", className: "top-[8%] left-[-3%] bg-secondary-300 -rotate-12" },
@@ -129,7 +132,14 @@ export function CurriculumHero({ dict }: { dict: Dictionary }) {
               scale={0.92}
               className={cn("absolute", chipPositions[i])}
             >
-              <div className="flex items-center gap-2.5 rounded-2xl bg-white py-2 pr-2.5 pl-3.5 shadow-clay">
+              {/* Hover lives on this inner card: the Reveal wrapper owns its transform. */}
+              <div
+                className={cn(
+                  "group flex cursor-default items-center gap-2.5 rounded-2xl bg-white py-2 pr-2.5 pl-3.5 shadow-clay ring-2 ring-transparent transition-[transform,box-shadow] duration-300 ease-out-soft hover:shadow-clay-hover hover:ring-secondary-400",
+                  "motion-safe:hover:-translate-y-1.5 motion-safe:hover:scale-110",
+                  chipHoverTilt[i],
+                )}
+              >
                 <p className="leading-tight">
                   <span className="block text-base font-extrabold text-primary">
                     {chip.word}
@@ -140,7 +150,7 @@ export function CurriculumHero({ dict }: { dict: Dictionary }) {
                 </p>
                 <span
                   aria-hidden="true"
-                  className="grid size-6 place-items-center rounded-full bg-primary-500 text-white"
+                  className="grid size-6 place-items-center rounded-full bg-primary-500 text-white transition-[transform,background-color,color] duration-300 ease-out-soft group-hover:bg-secondary-500 group-hover:text-primary motion-safe:group-hover:scale-125 motion-safe:group-hover:rotate-12"
                 >
                   <CheckIcon className="size-3.5" strokeWidth={3} />
                 </span>

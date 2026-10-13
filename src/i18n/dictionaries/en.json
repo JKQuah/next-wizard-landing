@@ -1184,7 +1184,7 @@
         "label": "Teachers"
       },
       {
-        "value": "5Y",
+        "value": "5Y+",
         "label": "Experience"
       }
     ]
@@ -1277,6 +1277,23 @@
           "I am thrilled with Joel's progress in math since joining Singapore Math Wizard.",
           "Coming from a local SJKC syllabus, we worried about his English. Instead, he has built a stronger math foundation and improved his English too.",
           "He has made impressive progress this year and, most importantly, enjoys every session."
+        ]
+      },
+      {
+        "name": "Jasmine's Parent",
+        "grade": "Primary 4",
+        "comments": [
+          "Jasmine has shown remarkable improvement in her math skills since joining Singapore Math Wizard.",
+          "Teacher Wong is patient and provides clear explanations, which has helped her gain confidence in tackling challenging word problems.",
+          "We are grateful that we have seen a positive change in her attitude towards math."
+        ]
+      },
+      {
+        "name": "Louis Liew's Parent",
+        "grade": "Primary 1",
+        "comments": [
+          "Thanks to Teacher Yeap, Louis has made significant progress in his math skills since joining Singapore Math Wizard.",
+          "The teachers are dedicated and provide personalized attention, which has helped him overcome difficulties and build a strong foundation."
         ]
       }
     ]
@@ -1730,7 +1747,7 @@
         "value": "Always open"
       },
       "phone": {
-        "label": "Phone / WhatsApp"
+        "label": "WhatsApp"
       },
       "email": {
         "label": "Email"
@@ -1757,6 +1774,11 @@
       "phone": "Phone number",
       "country": "Country",
       "countryRequired": "Please select your country.",
+      "nameRequired": "Please enter your name.",
+      "emailRequired": "Please enter your email address.",
+      "emailInvalid": "Please enter a valid email address, like name@example.com.",
+      "phoneRequired": "Please enter your phone number.",
+      "messageRequired": "Please tell us how we can help.",
       "countryPlaceholder": "Select your country",
       "countries": [
         {
@@ -1799,8 +1821,13 @@
       "message": "Tell us more about your kid",
       "submit": "Send message",
       "sending": "Sending…",
-      "success": "Thank you! Your message has been sent and we'll be in touch soon.",
-      "error": "Sorry, we couldn't send your message just now. Please reach us on WhatsApp or by email instead."
+      "successTitle": "Almost there!",
+      "success": "WhatsApp is opening with your message ready. Tap Send there to finish.",
+      "openWhatsApp": "Open WhatsApp",
+      "errorTitle": "Message not sent",
+      "error": "Sorry, we couldn't send your message just now. Please reach us on WhatsApp or by email instead.",
+      "dismiss": "Dismiss notification",
+      "emailUs": "Email Us"
     }
   },
   "footer": {

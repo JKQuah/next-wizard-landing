@@ -22,9 +22,6 @@ export const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encode
 export const mapEmbedUrl =
   "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3972.2630405512214!2d100.3037258!3d5.376805399999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304ac19d9d53ec4f%3A0x4afa29ee25a103a8!2sJalan%20Kaki%20Bukit%2C%2011700%20Gelugor%2C%20Pulau%20Pinang!5e0!3m2!1sen!2smy!4v1686130331480!5m2!1sen!2smy";
 
-/** Where the contact form posts. The main site has no handler there yet (405). */
-export const contactFormAction = `${SITE_URL}/contact`;
-
 export const whatsappUrl = (message: string) =>
   `https://wa.me/${contact.whatsappNumber}?text=${encodeURIComponent(message)}`;
 
