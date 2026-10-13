@@ -22,12 +22,6 @@ export default async function HomePage() {
     <>
       <JsonLd data={faqJsonLd(locale, dict)} />
       <HeroSection dict={dict} />
-      <Mascot
-        src="/brand/mascot.png"
-        text={dict.mascot.text}
-        href={whatsappUrl(dict.mascot.whatsappMessage)}
-        externalNote={dict.a11y.external}
-      />
       <AboutSection dict={dict} />
       <PracticleSection dict={dict} />
       <StatsSection dict={dict} />
@@ -37,6 +31,13 @@ export default async function HomePage() {
       <InviteSection dict={dict} />
       <ReviewsSection dict={dict} />
       <FaqSection dict={dict} locale={locale} />
+      {/* Last on purpose: it is sticky, and stops where <main> ends. */}
+      <Mascot
+        src="/brand/mascot.png"
+        text={dict.mascot.text}
+        href={whatsappUrl(dict.mascot.whatsappMessage)}
+        externalNote={dict.a11y.external}
+      />
     </>
   );
 }

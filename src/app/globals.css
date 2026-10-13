@@ -69,9 +69,11 @@
  * ------------------------------------------------------------------------- */
 @theme inline {
   --font-sans:
-    var(--font-nunito), var(--font-noto-sc), ui-sans-serif, system-ui, sans-serif;
+    var(--font-nunito), var(--font-noto-sc), ui-sans-serif, system-ui,
+    sans-serif;
   --font-heading:
-    var(--font-nunito), var(--font-noto-sc), ui-sans-serif, system-ui, sans-serif;
+    var(--font-nunito), var(--font-noto-sc), ui-sans-serif, system-ui,
+    sans-serif;
 
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -101,11 +103,13 @@
   --radius-4xl: calc(var(--radius) * 3);
   --animate-blink-cursor: blink-cursor 1.2s step-end infinite;
   @keyframes blink-cursor {
-  0%, 49% {
-    opacity: 1;
+    0%,
+    49% {
+      opacity: 1;
     }
-  50%, 100% {
-    opacity: 0;
+    50%,
+    100% {
+      opacity: 0;
     }
   }
 }
@@ -203,6 +207,37 @@
       transform: translateY(-4px);
       box-shadow: var(--shadow-clay-hover);
     }
+  }
+}
+
+/* Animated link underline: draws in from the left on hover or focus and
+ * retracts back to the left on leave. Put it on the text itself (an inline
+ * span), not on a padded or flex link; inside a `.group` link it follows the
+ * link's hover and focus as well. */
+.link-underline {
+  background-image: linear-gradient(currentColor, currentColor);
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  background-size: 0% 2px;
+  padding-bottom: 2px;
+  transition: background-size 300ms var(--ease-out-soft);
+}
+
+.link-underline:focus-visible,
+.group:focus-visible .link-underline {
+  background-size: 100% 2px;
+}
+
+@media (hover: hover) {
+  .link-underline:hover,
+  .group:hover .link-underline {
+    background-size: 100% 2px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .link-underline {
+    transition: none;
   }
 }
 

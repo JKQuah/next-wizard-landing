@@ -10,6 +10,8 @@ const pages = [
   { path: "/curriculum", changeFrequency: "monthly", priority: 0.8 },
   { path: "/packages", changeFrequency: "monthly", priority: 0.9 },
   { path: "/contact", changeFrequency: "yearly", priority: 0.6 },
+  { path: "/terms", changeFrequency: "yearly", priority: 0.3 },
+  { path: "/privacy", changeFrequency: "yearly", priority: 0.3 },
 ] as const;
 
 const hreflang = { en: "en", zh: "zh-Hans" } as const;
