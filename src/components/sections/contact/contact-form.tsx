@@ -7,6 +7,7 @@ import { WhatsAppIcon } from "@/components/icons/whatsapp";
 import { CountrySelect } from "@/components/sections/contact/country-select";
 import { Button } from "@/components/ui/button";
 import { Toaster, toastManager } from "@/components/ui/toaster";
+import { trackEvent } from "@/lib/analytics";
 import { whatsappUrl } from "@/lib/site";
 import type { Dictionary } from "@/i18n/get-dictionary";
 import { interpolate } from "@/i18n/format";
@@ -145,6 +146,11 @@ export function ContactForm({ content, fallback }: ContactFormProps) {
 
     // Opened straight from the submit gesture so popup blockers allow it.
     const chat = window.open(url, "_blank");
+
+    // Counts the enquiry itself. Only the country code goes along, never the
+    // typed details.
+    trackEvent("generate_lead", { method: "contact_form", lead_country: country });
+
     if (!chat) {
       // Stays until dismissed: it carries the links people need next.
       toastManager.add({

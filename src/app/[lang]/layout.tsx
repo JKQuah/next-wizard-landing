@@ -1,12 +1,14 @@
 import type { Metadata, Viewport } from "next";
 import { Nunito, Noto_Sans_SC } from "next/font/google";
 
+import { GoogleTags } from "@/components/analytics/google-tags";
 import { MotionProvider } from "@/components/motion/reveal";
 import { JsonLd } from "@/components/seo/json-ld";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { SiteHeader } from "@/components/layout/site-header";
 import { locales } from "@/i18n/config";
 import { getDictionary, getLocale } from "@/i18n/get-dictionary";
+import { GOOGLE_SITE_VERIFICATION } from "@/lib/analytics";
 import { pageMetadata, organizationJsonLd, websiteJsonLd } from "@/lib/seo";
 import { SITE_NAME, siteOrigin } from "@/lib/site";
 
@@ -47,6 +49,10 @@ export async function generateMetadata(): Promise<Metadata> {
     creator: SITE_NAME,
     publisher: SITE_NAME,
     category: "education",
+    // Google Search Console ownership check (the "HTML tag" method).
+    verification: GOOGLE_SITE_VERIFICATION
+      ? { google: GOOGLE_SITE_VERIFICATION }
+      : undefined,
     robots: {
       index: true,
       follow: true,
@@ -86,6 +92,7 @@ export default async function RootLayout({ children }: LayoutProps<"/[lang]">) {
         </noscript>
       </head>
       <body className="flex min-h-dvh flex-col overflow-x-clip">
+        <GoogleTags />
         <JsonLd data={organizationJsonLd(value, dict)} />
         <JsonLd data={websiteJsonLd(value)} />
         <a
