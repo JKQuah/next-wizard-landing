@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "gallery:assets": "node scripts/generate-gallery-assets.mjs"
   },
   "dependencies": {
     "@base-ui/react": "^1.9.0",
