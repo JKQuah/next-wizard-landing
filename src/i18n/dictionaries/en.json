@@ -1596,48 +1596,17 @@
       "upgradedLabel": "Upgraded"
     },
     "gallery": {
-      "title": "Gallery Wall",
-      "subtitle": "Journey into the World of Singapore Math",
-      "filterLabel": "Filter the gallery",
-      "all": "All",
-      "allTagline": "Journey into the World of Singapore Math",
-      "categories": [
-        {
-          "id": "classes",
-          "label": "Class moments",
-          "tagline": "Journey into the World of Singapore Math",
-          "items": [
-            {
-              "id": "photo-01",
-              "alt": "A teacher smiling at her laptop beside a fractions lesson on screen, with the words Customize teaching plan and Interactive learning works."
-            },
-            {
-              "id": "photo-02",
-              "alt": "Poster saying Don't let math freak you out anymore, PM for a free trial class assessment for Primary 1 to Primary 6, above photos of children learning online."
-            },
-            {
-              "id": "photo-03",
-              "alt": "1-to-1 coaching: a pizza fractions question on screen while a teacher and a student join the class by video."
-            },
-            {
-              "id": "photo-04",
-              "alt": "A peer class of two to four students holding up their handwritten work on a video call."
-            },
-            {
-              "id": "photo-05",
-              "alt": "Chinese poster offering a free online trial class for children aged 6 to 12, with two students showing their notebooks on video."
-            }
-          ]
-        },
+      "scroller": {
+        "listLabel": "Poster gallery, scroll sideways to see more",
+        "previous": "Scroll left",
+        "next": "Scroll right"
+      },
+      "sections": [
         {
           "id": "benefits",
           "label": "Benefits",
-          "tagline": "Journey into the World of Singapore Math",
+          "tagline": "Build strong foundations that last",
           "items": [
-            {
-              "id": "benefit-01",
-              "alt": "Title card reading Benefits of Singapore Math, over a classroom of children raising their hands."
-            },
             {
               "id": "benefit-02",
               "alt": "Benefit 1, Build strong foundation: a parent and a child counting on their fingers while learning concepts thoroughly."
@@ -1657,10 +1626,30 @@
           ]
         },
         {
-          "id": "materials",
-          "label": "Materials",
+          "id": "method",
+          "label": "Method",
           "tagline": "Embrace the Magic of Mathematics",
           "items": [
+            {
+              "id": "plan-01",
+              "alt": "A teacher smiling at her laptop beside a fractions lesson on screen, with the words Customize teaching plan and Interactive learning works."
+            },
+            {
+              "id": "plan-02",
+              "alt": "Poster saying Don't let math freak you out anymore, PM for a free trial class assessment for Primary 1 to Primary 6, above photos of children learning online."
+            },
+            {
+              "id": "plan-03",
+              "alt": "1-to-1 coaching: a pizza fractions question on screen while a teacher and a student join the class by video."
+            },
+            {
+              "id": "plan-04",
+              "alt": "A peer class of two to four students holding up their handwritten work on a video call."
+            },
+            {
+              "id": "plan-05",
+              "alt": "Chinese poster offering a free online trial class for children aged 6 to 12, with two students showing their notebooks on video."
+            },
             {
               "id": "method-01",
               "alt": "Bar modelling worked example in Chinese: three boxes of pearls drawn as bars, solved as 4760 + 550 − 29 = 5281."
@@ -1705,8 +1694,107 @@
               "alt": "Teacher Admellis to a star student: I'm so proud of you and how far you've come."
             }
           ]
+        },
+        {
+          "id": "results",
+          "label": "Results",
+          "tagline": "Real students, real progress",
+          "items": [
+            {
+              "id": "result-01",
+              "alt": "Congratulations to Mirjhula from Perak, Primary 6, for reaching the Top 3 on the global practice leaderboard, shown beside her online tutoring session with Mr. Kenneth."
+            },
+            {
+              "id": "result-02",
+              "alt": "Watch their confidence soar: a child struggling over a textbook becomes a smiling boy holding a tablet that shows a bar model, with an invitation to register for a free trial class."
+            },
+            {
+              "id": "result-03",
+              "alt": "Comparison chart of traditional math versus Singapore Math: understand concepts first, identify relationships, visualise with bar models, and AI adaptive learning with step-by-step worked solutions."
+            },
+            {
+              "id": "result-04",
+              "alt": "Real student results: two marked Primary 4 and Primary 5 maths papers with high scores, and a girl working on a tablet, under the headline 2 years of straight As."
+            },
+            {
+              "id": "result-05",
+              "alt": "Singapore Math online class for Primary 1 to Primary 6 and IGCSE secondary: a teacher presenting a bar model solution to a word problem, with an invitation to register for a free trial class."
+            }
+          ]
         }
       ],
+      "starStudent": {
+        "title": "Star Students",
+        "subtitle": "Celebrating the learners who shine every month",
+        "tabsLabel": "Choose a month",
+        "listLabel": "Star student posts, scroll sideways to see more",
+        "previous": "Scroll left",
+        "next": "Scroll right",
+        "months": [
+          {
+            "id": "sep-26",
+            "label": "September 2026",
+            "items": [
+              {
+                "id": "1",
+                "alt": "Congratulations to September Star Student Leanne Bong, Year 3, International School, Sarawak, hugging a toy at her desk beside the Wizard mascot."
+              },
+              {
+                "id": "2",
+                "alt": "A happy parent's feedback on Leanne's lessons: the online learning platform is attractive and engaging, and Teacher Jie Xi's creative teaching has helped Leanne grow more confident."
+              },
+              {
+                "id": "3",
+                "alt": "Teacher Jie Xi's feedback on Leanne: real progress in calculations, solving word problems and times table memorisation, and she now looks forward to Math class."
+              },
+              {
+                "id": "4",
+                "alt": "Singapore Math online tutoring for Primary 1 to 6: 1-to-1 or peer classes, young and energetic tutors, the proven Singapore Math method and a free AI Math Learning Portal."
+              }
+            ]
+          },
+          {
+            "id": "aug-26",
+            "label": "August 2026",
+            "items": [
+              {
+                "id": "1",
+                "alt": "August Star Student poster for Chan Zoie, Primary 5, Selangor, with Teacher Damon in charge, shown writing at her desk."
+              },
+              {
+                "id": "2",
+                "alt": "August Star Student Chan Zoie, Primary 5, Selangor, with Teacher Damon and a parent testimony describing how her confidence and exam results improved since she started in 2023."
+              },
+              {
+                "id": "3",
+                "alt": "Singapore Math online tutoring poster: 1-to-1 and peer learning, over 30 experienced tutors and a proven Singapore Math method, with an offer of a free trial and AI math learning program."
+              }
+            ]
+          },
+          {
+            "id": "jul-26",
+            "label": "July 2026",
+            "items": [
+              {
+                "id": "1",
+                "alt": "Congratulations to July Star Student Amberly Chai, Year 3, Borneo International School, Sarawak, shown learning on a tablet beside her star student badge."
+              },
+              {
+                "id": "2",
+                "alt": "Parents' feedback for July: Amberly has grown in confidence and focus since joining the class, with thanks to Teacher Fiona for her clear, caring and disciplined teaching."
+              },
+              {
+                "id": "3",
+                "alt": "Teacher's feedback for July: watching Amberly grow from hesitating to confidently attempting challenging problems has been one of the most rewarding parts of teaching her."
+              },
+              {
+                "id": "4",
+                "alt": "Singapore Math online tutoring for Primary 1 to 6: simple, clear and easy to understand, with a fractions exercise on screen and an invitation to book a free assessment."
+              }
+            ]
+          }
+        ]
+      },
       "lightbox": {
         "title": "Gallery",
         "close": "Close",

@@ -2,6 +2,8 @@ import { cn } from "@/lib/utils";
 
 type DoodleProps = {
   variant?: "loop" | "wave" | "arc";
+  /** `light` draws white dots, for dark backgrounds. */
+  tone?: "dark" | "light";
   className?: string;
 };
 
@@ -12,13 +14,17 @@ const paths = {
 } as const;
 
 /** Dashed hand-drawn style line, purely decorative background texture. */
-export function Doodle({ variant = "loop", className }: DoodleProps) {
+export function Doodle({ variant = "loop", tone = "dark", className }: DoodleProps) {
   return (
     <svg
       viewBox="0 0 440 200"
       fill="none"
       aria-hidden="true"
-      className={cn("pointer-events-none absolute text-primary-500/25", className)}
+      className={cn(
+        "pointer-events-none absolute",
+        tone === "light" ? "text-white/20" : "text-primary-500/25",
+        className,
+      )}
     >
       <path
         d={paths[variant]}
