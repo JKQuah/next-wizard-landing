@@ -1,7 +1,13 @@
 "use client";
 
 import type { StaticImageData } from "next/image";
-import { useMemo, useState, type CSSProperties } from "react";
+import {
+  useEffect,
+  useMemo,
+  useRef,
+  useState,
+  type CSSProperties,
+} from "react";
 
 import { BlurImage } from "@/components/ui/blur-image";
 import { useIdlePrefetch, type PrefetchEntry } from "@/lib/prefetch-images";
@@ -29,6 +35,8 @@ export type ScrollerLabels = {
 export type LayoutProps = {
   items: GalleryImage[];
   onOpen: (index: number) => void;
+  /** True while the full-size viewer is open; layouts that animate hold still. */
+  paused?: boolean;
   /** Accessible names for layouts that scroll sideways. */
   scroller: ScrollerLabels;
 };
@@ -151,6 +159,12 @@ export function ScrollLayout({ items, onOpen, scroller }: LayoutProps) {
  * swaps the featured poster; clicking the featured poster opens it full size.
  * On phones the rail becomes a swipeable row under the poster.
  *
+ * The featured poster also steps through the set by itself every AUTO_MS while
+ * the block is on screen. After the visitor picks a thumbnail it stays on that
+ * poster for PICK_HOLD_MS, then carries on from there. It holds still while the
+ * pointer or keyboard focus is on the featured poster, while the full-size
+ * viewer is open, in a hidden tab, and for visitors who prefer reduced motion.
+ *
  * `--f` is the featured poster's side. The rail is sized from it so that five
  * thumbnails and four gaps add up to exactly the same height.
  */
@@ -159,9 +173,56 @@ const SHOWCASE_SIZES =
 const SHOWCASE_THUMB_SIZES =
   "(min-width: 1024px) 120px, (min-width: 768px) 80px, 64px";
 
-export function ShowcaseLayout({ items, onOpen }: LayoutProps) {
+const AUTO_MS = 2000;
+const PICK_HOLD_MS = 1500;
+
+export function ShowcaseLayout({ items, onOpen, paused }: LayoutProps) {
   const [active, setActive] = useState(0);
+  // Bumped on every pick so the timer starts over from the picked poster.
+  const [picks, setPicks] = useState(0);
+  const [engaged, setEngaged] = useState(false);
+  const nextDelay = useRef(AUTO_MS);
+  const [onScreen, setOnScreen] = useState(false);
+  const root = useRef<HTMLDivElement>(null);
+  const rail = useRef<HTMLUListElement>(null);
   const current = items[active] ?? items[0];
+
+  useEffect(() => {
+    const el = root.current;
+    if (!el) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => setOnScreen(entry.isIntersecting),
+      { threshold: 0.3 },
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
+
+  useEffect(() => {
+    if (paused || engaged || !onScreen || items.length < 2) return;
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    let timer: ReturnType<typeof setTimeout>;
+    const schedule = () => {
+      timer = setTimeout(() => {
+        if (!document.hidden) setActive((a) => (a + 1) % items.length);
+        nextDelay.current = AUTO_MS;
+        schedule();
+      }, nextDelay.current);
+    };
+    schedule();
+    return () => clearTimeout(timer);
+  }, [paused, engaged, onScreen, picks, items.length]);
+
+  // On phones the rail scrolls sideways: keep the active thumbnail in view.
+  useEffect(() => {
+    const list = rail.current;
+    const thumb = list?.children[active] as HTMLElement | undefined;
+    if (!list || !thumb || list.scrollWidth <= list.clientWidth) return;
+    list.scrollTo({
+      left: thumb.offsetLeft - (list.clientWidth - thumb.offsetWidth) / 2,
+      behavior: "smooth",
+    });
+  }, [active]);
 
   // Thumbnails first (they are what is on screen), then the large version of
   // every poster so picking one swaps instantly.
@@ -176,20 +237,33 @@ export function ShowcaseLayout({ items, onOpen }: LayoutProps) {
   );
 
   return (
-    <div className="flex flex-col gap-4 md:mx-auto md:grid md:w-fit md:grid-cols-[var(--f)_calc((var(--f)_-_3rem)_*_0.4_+_0.75rem)] md:items-start md:gap-6 md:[--f:26rem] lg:[--f:38rem]">
+    <div
+      ref={root}
+      className="flex flex-col gap-4 md:mx-auto md:grid md:w-fit md:grid-cols-[var(--f)_calc((var(--f)_-_3rem)_*_0.4_+_0.75rem)] md:items-start md:gap-6 md:[--f:26rem] lg:[--f:38rem]"
+    >
       <FloatIn>
-        <GalleryTile
-          key={current.id}
-          image={current.image}
-          alt={current.alt}
-          big
-          sizes={SHOWCASE_SIZES}
-          onOpen={() => onOpen(active)}
-          className="animate-in duration-300 fade-in motion-reduce:animate-none"
-        />
+        <div
+          onPointerEnter={(e) => e.pointerType === "mouse" && setEngaged(true)}
+          onPointerLeave={() => setEngaged(false)}
+          onFocus={() => setEngaged(true)}
+          onBlur={() => setEngaged(false)}
+        >
+          <GalleryTile
+            key={current.id}
+            image={current.image}
+            alt={current.alt}
+            big
+            sizes={SHOWCASE_SIZES}
+            onOpen={() => onOpen(active)}
+            className="animate-in duration-300 fade-in motion-reduce:animate-none"
+          />
+        </div>
       </FloatIn>
 
-      <ul className="-mx-4 flex snap-x scroll-px-4 gap-2.5 overflow-x-auto px-4 pt-1 pb-2 [scrollbar-width:thin] md:mx-0 md:grid md:grid-cols-2 md:gap-3 md:overflow-visible md:p-0">
+      <ul
+        ref={rail}
+        className="relative -mx-4 flex snap-x scroll-px-4 gap-2.5 overflow-x-auto px-4 pt-1 pb-2 [scrollbar-width:thin] md:mx-0 md:grid md:grid-cols-2 md:gap-3 md:overflow-visible md:p-0"
+      >
         {items.map((item, i) => {
           const selected = i === active;
 
@@ -199,7 +273,11 @@ export function ShowcaseLayout({ items, onOpen }: LayoutProps) {
                 <button
                   type="button"
                   aria-pressed={selected}
-                  onClick={() => setActive(i)}
+                  onClick={() => {
+                    nextDelay.current = PICK_HOLD_MS;
+                    setPicks((n) => n + 1);
+                    setActive(i);
+                  }}
                   className={cn(
                     "relative block size-16 cursor-pointer overflow-hidden rounded-xl ring-2 transition-[box-shadow,transform,opacity] duration-200 ease-out focus-visible:ring-4 focus-visible:ring-ring/40 focus-visible:ring-offset-2 focus-visible:outline-none active:scale-[0.96] md:aspect-square md:h-auto md:w-full md:rounded-2xl",
                     selected

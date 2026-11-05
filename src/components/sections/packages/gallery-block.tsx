@@ -97,6 +97,7 @@ export function GalleryBlock({
       <Layout
         items={items}
         scroller={scroller}
+        paused={open}
         onOpen={(i) => openAt(cards.length + i)}
       />
     </div>
