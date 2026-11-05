@@ -5,7 +5,6 @@ import type { Dictionary } from "@/i18n/get-dictionary";
 
 import { GalleryBlock } from "./gallery-block";
 import type { GalleryLayoutName } from "./gallery-layouts";
-import { StarStudentSection } from "./star-students";
 
 type GalleryContent = Dictionary["pricingMediaPage"]["gallery"];
 
@@ -49,34 +48,53 @@ const DECOR: Record<string, ReactNode> = {
   ),
 };
 
+type GallerySectionContent = GalleryContent["sections"][number];
+
+function renderBlock(
+  section: GallerySectionContent,
+  content: GalleryContent,
+  tone: "light" | "tinted",
+  headingLevel: "h2" | "h3",
+) {
+  return (
+    <GalleryBlock
+      key={section.id}
+      section={section}
+      layout={LAYOUTS[section.id] ?? "bento"}
+      lightbox={content.lightbox}
+      scroller={content.scroller}
+      tone={tone}
+      headingLevel={headingLevel}
+      decor={DECOR[section.id]}
+      improvements={section.id === "results" ? content.improvements : undefined}
+    />
+  );
+}
+
 /**
- * The gallery wall: one block each for benefits, method, reviews and results,
- * then the star student posters, which have their own month tabs. Image files
- * live under src/assets (see src/content/gallery.ts).
+ * The packages page gallery: benefits, method and results. Reviews and star
+ * students live on the home page (see ReviewNotesSection and
+ * StarStudentSection). Image files live under src/assets (see
+ * src/content/gallery.ts).
  */
 export function GallerySection({ content }: { content: GalleryContent }) {
+  const sections = content.sections.filter((s) => s.id !== "reviews");
+
   return (
     // The wrapper is the #gallery anchor that the old /media URL redirects to.
     <div id="gallery" className="scroll-mt-24">
-      {content.sections.map((section, i) => (
-        <GalleryBlock
-          key={section.id}
-          section={section}
-          layout={LAYOUTS[section.id] ?? "bento"}
-          lightbox={content.lightbox}
-          scroller={content.scroller}
-          tone={i % 2 === 0 ? "light" : "tinted"}
-          decor={DECOR[section.id]}
-          improvements={
-            section.id === "results" ? content.improvements : undefined
-          }
-        />
-      ))}
-
-      <StarStudentSection
-        content={content.starStudent}
-        lightbox={content.lightbox}
-      />
+      {sections.map((section, i) =>
+        renderBlock(section, content, i % 2 === 0 ? "light" : "tinted", "h3"),
+      )}
     </div>
   );
+}
+
+/**
+ * The teachers' and parents' notes (the gallery's "reviews" block), shown on
+ * the home page just above the parental review carousel.
+ */
+export function ReviewNotesSection({ content }: { content: GalleryContent }) {
+  const section = content.sections.find((s) => s.id === "reviews");
+  return section ? renderBlock(section, content, "light", "h2") : null;
 }

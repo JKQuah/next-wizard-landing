@@ -40,6 +40,7 @@ export function GalleryBlock({
   tone,
   decor,
   improvements,
+  headingLevel = "h3",
 }: {
   section: GallerySectionContent;
   layout: GalleryLayoutName;
@@ -49,6 +50,8 @@ export function GalleryBlock({
   /** Decorative background shapes (dotted doodles), drawn behind the content. */
   decor?: ReactNode;
   improvements?: Improvements;
+  /** h2 when the block is a section of its own page, h3 under another heading. */
+  headingLevel?: "h2" | "h3";
 }) {
   const [open, setOpen] = useState(false);
   const [index, setIndex] = useState(0);
@@ -114,8 +117,13 @@ export function GalleryBlock({
       <div className="mx-auto w-full max-w-6xl px-4 sm:px-6">
         <div className="mx-auto max-w-2xl text-center">
           <Reveal
-            as="h3"
-            className="text-2xl leading-tight font-extrabold text-primary md:text-3xl"
+            as={headingLevel}
+            className={cn(
+              "leading-tight font-extrabold text-primary",
+              headingLevel === "h2"
+                ? "text-3xl md:text-4xl"
+                : "text-2xl md:text-3xl",
+            )}
           >
             <span id={headingId}>{section.label}</span>
           </Reveal>

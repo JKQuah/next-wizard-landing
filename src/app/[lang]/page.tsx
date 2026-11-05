@@ -7,6 +7,8 @@ import { InviteSection } from "@/components/sections/invite";
 import { LevelsSection } from "@/components/sections/levels";
 import { MethodsSection } from "@/components/sections/methods";
 import { PracticleSection } from "@/components/sections/practicle";
+import { ReviewNotesSection } from "@/components/sections/packages/gallery";
+import { StarStudentSection } from "@/components/sections/packages/star-students";
 import { ReviewsSection } from "@/components/sections/reviews";
 import { StatsSection } from "@/components/sections/stats";
 import { TeachersSection } from "@/components/sections/teachers";
@@ -29,7 +31,12 @@ export default async function HomePage() {
       <TeachersSection dict={dict} />
       <MethodsSection dict={dict} />
       <InviteSection dict={dict} />
+      <ReviewNotesSection content={dict.pricingMediaPage.gallery} />
       <ReviewsSection dict={dict} />
+      <StarStudentSection
+        content={dict.pricingMediaPage.gallery.starStudent}
+        lightbox={dict.pricingMediaPage.gallery.lightbox}
+      />
       <FaqSection dict={dict} locale={locale} />
       {/* Last on purpose: it is sticky, and stops where <main> ends. */}
       <Mascot
