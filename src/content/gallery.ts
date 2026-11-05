@@ -14,6 +14,9 @@ import galleryBenefit02 from "@/assets/gallery/benefit-02.avif";
 import galleryBenefit03 from "@/assets/gallery/benefit-03.avif";
 import galleryBenefit04 from "@/assets/gallery/benefit-04.avif";
 import galleryBenefit05 from "@/assets/gallery/benefit-05.avif";
+import galleryImprovement01 from "@/assets/gallery/improvement-01.avif";
+import galleryImprovement02 from "@/assets/gallery/improvement-02.avif";
+import galleryImprovement03 from "@/assets/gallery/improvement-03.avif";
 import galleryMethod01 from "@/assets/gallery/method-01.avif";
 import galleryMethod02 from "@/assets/gallery/method-02.avif";
 import galleryMethod03 from "@/assets/gallery/method-03.avif";
@@ -58,6 +61,9 @@ export const galleryImages: Record<string, StaticImageData> = {
   "benefit-03": image(galleryBenefit03, 1000, 1000, "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADwAQCdASoMAAwAA4BaJQBdgMWW32uZmGgA/uAJ9mEcN8eGG9tvHD6jhl7vIvrxK6HFqoSbkM54JLzEpmF6QgtgUUj/sJG4VyRYofqhp9+l/PISgSy5AAAA"),
   "benefit-04": image(galleryBenefit04, 1000, 1000, "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAAAQAgCdASoMAAwAA4BaJYwCdAEO6rH140AAAP7nrdLMyPQy6xyvXDOb0R/NvritQSuvcq0Xpg8hL7rf2M7EH7vzlLLo8KXhis8Eg5BAFTDHAGYA"),
   "benefit-05": image(galleryBenefit05, 1000, 1000, "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAACwAQCdASoMAAwAA4BaJQAAXY8rZlAAAP7zzmvGtdT4Zy3/auTVhs1Y2UdrQFimo4uT0B8ApYj0JpEtdZ6gj4LnIGTX3D8CE7uAAA=="),
+  "improvement-01": image(galleryImprovement01, 698, 1080, "data:image/webp;base64,UklGRm4AAABXRUJQVlA4IGIAAADwAwCdASoMABMAPu1iqU2ppaOiMAgBMB2JYwCnFCIfTUalFq/YaU6AAP6yN+dGASYmh3fPtG7Sz9yr7M2S8/03NQoldloYv1H7nA16VoJlmszkH1iONcNa1cBtieJC/usAAA=="),
+  "improvement-02": image(galleryImprovement02, 881, 1178, "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAAAwAgCdASoMABAAA4BaJZQCw7EPhzAFma8qAAD+9Ofj17g9smwKFv0fcg36pI2EE4SjXcXKBBtlGiivzK3AkEQUoKAAAA=="),
+  "improvement-03": image(galleryImprovement03, 905, 1280, "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAACQAwCdASoMABEAPu1iqU2ppaOiMAgBMB2JQBOgA3EwowxoOGgQAPxlvNWE60M1p/EUmLz0esCr/wpXBvYj1b3/KGMSVL3ugaCa8xQDEWHZwsAA"),
   "method-01": image(galleryMethod01, 1080, 1080, "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADwAQCdASoMAAwAA4BaJQBdgCHv0oH8WAAA/uDFFfFhuZa/RuNaCkMErW5Xb9ahGLfl4ZMoAvHvI04EcTIyezK/Rsjejfg8CSwAAA=="),
   "method-02": image(galleryMethod02, 1080, 1080, "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAABQAgCdASoMAAwAA4BaJZACdAEf2/lWXjyMTgAA/teRvN5epyaowu8LFJ03li0/eDSGb+ITTDogt5hLYQXeHQoA6mjcXhPNi6IuDBxNN0WTYi/8NryAAA=="),
   "method-03": image(galleryMethod03, 1080, 1080, "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAABQAgCdASoMAAwAA4BaJYgCdAEQExbRXdp09gAA/uDIfllP2cxe1cd8c8M8bACMBQYsfKW9GTch3J4qVvjMEJamiHaziuazae4XAj/xt9i5nMvSJjAyBWZDImQAAA=="),
