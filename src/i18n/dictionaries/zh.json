@@ -1716,6 +1716,47 @@
           ]
         }
       ],
+      "improvements": {
+        "moreLabel": "更多学生的好成绩",
+        "gradeLabel": "{grade} 等级",
+        "fromLabel": "之前",
+        "toLabel": "现在",
+        "items": [
+          {
+            "id": "improvement-01",
+            "alt": "LUCA International School 三年级数学第一学期考试卷，成绩 88%，总分 50 分中得 44 分。",
+            "school": "LUCA International School",
+            "level": "三年级（Year 3）",
+            "exam": "第一学期考试，数学",
+            "score": "88%",
+            "from": "",
+            "grade": "",
+            "summary": "第一学期数学考试 50 分中拿到 44 分。"
+          },
+          {
+            "id": "improvement-02",
+            "alt": "St. Joseph's Private Primary School 五年级数学单元测验 1（2026 年 3 月），成绩 91%，A 等级。",
+            "school": "St. Joseph's Private Primary School",
+            "level": "五年级（Primary 5）",
+            "exam": "单元测验 1，数学",
+            "score": "91%",
+            "from": "",
+            "grade": "A",
+            "summary": "2026 年 3 月单元测验取得 A 等级。"
+          },
+          {
+            "id": "improvement-03",
+            "alt": "学业成就海报：SK Tunku Muda Serting 的学生数学成绩一年内从 62 分进步到 92 分，并附上两份批改后的试卷。",
+            "school": "SK Tunku Muda Serting，森美兰",
+            "level": "二年级升三年级",
+            "exam": "年终评估，数学",
+            "score": "92%",
+            "from": "62%",
+            "grade": "",
+            "summary": "短短一年，从二年级到三年级进步 30 分。"
+          }
+        ]
+      },
       "starStudent": {
         "title": "每月之星",
         "subtitle": "表扬每个月闪闪发光的学员",

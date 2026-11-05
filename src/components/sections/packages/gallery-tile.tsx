@@ -20,6 +20,8 @@ import { LIGHTBOX_SIZES } from "./gallery-lightbox";
  *   aspect ratio (used by the collage, so nothing is cropped).
  * - `frame="polaroid"` wraps the poster in a white photo border.
  * - `flat` drops the card shadow (the hover lift stays).
+ * - `imageClassName` swaps the default `object-cover` on a filled poster, e.g.
+ *   `object-cover object-top` to keep the top of a cropped paper in view.
  */
 export function GalleryTile({
   image,
@@ -29,6 +31,7 @@ export function GalleryTile({
   fill = false,
   frame = "card",
   flat = false,
+  imageClassName = "object-cover",
   onOpen,
   className,
 }: {
@@ -40,6 +43,7 @@ export function GalleryTile({
   fill?: boolean;
   frame?: "card" | "polaroid";
   flat?: boolean;
+  imageClassName?: string;
   onOpen: () => void;
   className?: string;
 }) {
@@ -76,7 +80,7 @@ export function GalleryTile({
             alt={alt}
             fill
             sizes={sizes}
-            className="object-cover"
+            className={imageClassName}
           />
         ) : (
           <BlurImage

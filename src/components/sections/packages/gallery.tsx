@@ -67,6 +67,9 @@ export function GallerySection({ content }: { content: GalleryContent }) {
           scroller={content.scroller}
           tone={i % 2 === 0 ? "light" : "tinted"}
           decor={DECOR[section.id]}
+          improvements={
+            section.id === "results" ? content.improvements : undefined
+          }
         />
       ))}
 

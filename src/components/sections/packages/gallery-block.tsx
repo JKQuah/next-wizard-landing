@@ -14,13 +14,23 @@ import {
   type ScrollerLabels,
 } from "./gallery-layouts";
 import { GalleryLightbox, type LightboxLabels } from "./gallery-lightbox";
+import {
+  ResultCards,
+  type ResultCardItem,
+  type ResultCardLabels,
+} from "./result-cards";
 
-type GallerySectionContent =
-  Dictionary["pricingMediaPage"]["gallery"]["sections"][number];
+type GalleryContent = Dictionary["pricingMediaPage"]["gallery"];
+type GallerySectionContent = GalleryContent["sections"][number];
+
+/** Report cards shown above a section's posters (the results section). */
+export type Improvements = GalleryContent["improvements"];
 
 /**
  * One section of the gallery: a heading, its posters laid out in the given
- * style, and a lightbox that pages through them.
+ * style, and a lightbox that pages through them. With `improvements`, report
+ * cards (paper plus school, level and score) come first, then a divider, then
+ * the posters; the lightbox pages through all of them in that order.
  */
 export function GalleryBlock({
   section,
@@ -29,6 +39,7 @@ export function GalleryBlock({
   scroller,
   tone,
   decor,
+  improvements,
 }: {
   section: GallerySectionContent;
   layout: GalleryLayoutName;
@@ -37,6 +48,7 @@ export function GalleryBlock({
   tone: "light" | "tinted";
   /** Decorative background shapes (dotted doodles), drawn behind the content. */
   decor?: ReactNode;
+  improvements?: Improvements;
 }) {
   const [open, setOpen] = useState(false);
   const [index, setIndex] = useState(0);
@@ -50,18 +62,39 @@ export function GalleryBlock({
     [section.items],
   );
 
+  const cards = useMemo<ResultCardItem[]>(
+    () =>
+      (improvements?.items ?? []).map((item) => ({
+        ...item,
+        image: galleryImages[item.id],
+      })),
+    [improvements],
+  );
+  const cardLabels: ResultCardLabels | undefined = improvements;
+  const viewable = useMemo(() => [...cards, ...items], [cards, items]);
+
+  const openAt = (i: number) => {
+    setIndex(i);
+    setOpen(true);
+  };
+
   const Layout = layouts[layout];
   const fullBleed = FULL_BLEED.includes(layout);
 
   const body = (
     <div className="mt-10 md:mt-12">
+      {cardLabels && cards.length > 0 && (
+        <>
+          <ResultCards items={cards} labels={cardLabels} onOpen={openAt} />
+          <h4 className="my-10 flex items-center gap-4 text-center text-lg font-extrabold text-primary before:h-px before:flex-1 before:bg-primary-300/60 after:h-px after:flex-1 after:bg-primary-300/60 md:my-12 md:text-xl">
+            {improvements?.moreLabel}
+          </h4>
+        </>
+      )}
       <Layout
         items={items}
         scroller={scroller}
-        onOpen={(i) => {
-          setIndex(i);
-          setOpen(true);
-        }}
+        onOpen={(i) => openAt(cards.length + i)}
       />
     </div>
   );
@@ -103,7 +136,7 @@ export function GalleryBlock({
       <GalleryLightbox
         open={open}
         onOpenChange={setOpen}
-        items={items}
+        items={viewable}
         index={index}
         onIndexChange={setIndex}
         title={section.label}

@@ -1,7 +1,7 @@
 "use client";
 
 import type { StaticImageData } from "next/image";
-import { useMemo, useState } from "react";
+import { useMemo, useState, type CSSProperties } from "react";
 
 import { BlurImage } from "@/components/ui/blur-image";
 import { useIdlePrefetch, type PrefetchEntry } from "@/lib/prefetch-images";
@@ -278,10 +278,12 @@ export function PolaroidLayout({ items, onOpen }: LayoutProps) {
 /**
  * A justified collage: every poster has the same height and a width that
  * follows its own proportions, so mixed square and portrait posters sit in
- * tidy rows without any cropping. `--row` is that shared height.
+ * tidy rows without any cropping. From sm up, all posters share one row: each
+ * grows in proportion to its aspect ratio (`--grow`), which makes the heights
+ * come out equal. On phones they wrap at a fixed small height (`--row`).
  */
 const COLLAGE_SIZES =
-  "(min-width: 1024px) 352px, (min-width: 768px) 240px, 50vw";
+  "(min-width: 1024px) 230px, (min-width: 640px) 19vw, 40vw";
 
 export function CollageLayout({ items, onOpen }: LayoutProps) {
   useIdlePrefetch(
@@ -292,12 +294,17 @@ export function CollageLayout({ items, onOpen }: LayoutProps) {
   );
 
   return (
-    <ul className="flex flex-wrap justify-center gap-3 [--row:calc((100vw_-_2.75rem)/2)] sm:gap-5 sm:[--row:11rem] md:[--row:15rem] lg:[--row:22rem]">
+    <ul className="mx-auto flex max-w-5xl flex-wrap justify-center gap-3 [--row:8.5rem] sm:flex-nowrap sm:gap-4">
       {items.map((item, i) => (
         <li
           key={item.id}
-          style={{ aspectRatio: `${item.image.width} / ${item.image.height}` }}
-          className="h-(--row) flex-none"
+          style={
+            {
+              aspectRatio: `${item.image.width} / ${item.image.height}`,
+              "--grow": item.image.width / item.image.height,
+            } as CSSProperties
+          }
+          className="h-(--row) flex-none sm:h-auto sm:min-w-0 sm:flex-[var(--grow)_1_0%]"
         >
           <FloatIn index={i} className="h-full">
             <GalleryTile
