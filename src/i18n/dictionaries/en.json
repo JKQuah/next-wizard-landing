@@ -1737,7 +1737,7 @@
             "exam": "Term 1 Examination, Mathematics",
             "score": "88%",
             "from": "",
-            "grade": "",
+            "grade": "A",
             "summary": "Scored 44 out of 50 marks in the Term 1 Mathematics paper."
           },
           {
@@ -1748,8 +1748,8 @@
             "exam": "Topical Assessment 1, Mathematics",
             "score": "91%",
             "from": "",
-            "grade": "A",
-            "summary": "An A grade in the March 2026 topical assessment."
+            "grade": "A+",
+            "summary": "An A+ grade in the March 2026 topical assessment."
           },
           {
             "id": "improvement-03",
@@ -1759,7 +1759,7 @@
             "exam": "Final Year Assessment, Mathematics",
             "score": "92%",
             "from": "62%",
-            "grade": "",
+            "grade": "A+",
             "summary": "Up 30 points in just one year, from Year 2 to Year 3."
           }
         ]

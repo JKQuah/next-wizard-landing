@@ -69,6 +69,7 @@ export function ResultCards({
                   flat
                   sizes={CARD_SIZES}
                   imageClassName="object-cover object-top"
+                  rounded="rounded-[calc(var(--radius-3xl)_-_0.75rem_-_1px)] md:rounded-[calc(var(--radius-3xl)_-_1rem_-_1px)]"
                   onOpen={() => onOpen(i)}
                 />
               </div>

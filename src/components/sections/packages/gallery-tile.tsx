@@ -20,6 +20,9 @@ import { LIGHTBOX_SIZES } from "./gallery-lightbox";
  *   aspect ratio (used by the collage, so nothing is cropped).
  * - `frame="polaroid"` wraps the poster in a white photo border.
  * - `flat` drops the card shadow (the hover lift stays).
+ * - `rounded` replaces the default corner radius on the button and the image.
+ *   Inside a padded card use the card's radius minus its padding, so the
+ *   corners are concentric.
  * - `imageClassName` swaps the default `object-cover` on a filled poster, e.g.
  *   `object-cover object-top` to keep the top of a cropped paper in view.
  */
@@ -32,6 +35,7 @@ export function GalleryTile({
   frame = "card",
   flat = false,
   imageClassName = "object-cover",
+  rounded = "rounded-3xl",
   onOpen,
   className,
 }: {
@@ -44,6 +48,7 @@ export function GalleryTile({
   frame?: "card" | "polaroid";
   flat?: boolean;
   imageClassName?: string;
+  rounded?: string;
   onOpen: () => void;
   className?: string;
 }) {
@@ -61,7 +66,7 @@ export function GalleryTile({
       className={cn(
         "group relative block w-full cursor-zoom-in text-left transition-[transform,box-shadow] duration-200 ease-out hover:-translate-y-1 focus-visible:ring-4 focus-visible:ring-ring/40 focus-visible:ring-offset-2 focus-visible:outline-none active:scale-[0.98]",
         !flat && "shadow-clay hover:shadow-clay-hover",
-        polaroid ? "rounded-2xl bg-white p-2.5 pb-9" : "rounded-3xl",
+        polaroid ? "rounded-2xl bg-white p-2.5 pb-9" : rounded,
         fill && "h-full",
         className,
       )}
@@ -69,7 +74,7 @@ export function GalleryTile({
       <span
         className={cn(
           "relative block w-full overflow-hidden bg-muted ring-1 ring-primary-300/50",
-          polaroid ? "rounded-lg" : "rounded-3xl",
+          polaroid ? "rounded-lg" : rounded,
           fill && "h-full",
           !fill && square && "aspect-square",
         )}
